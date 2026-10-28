@@ -40,55 +40,41 @@ function ageLabel(value) {
   return `${Math.floor(hours / 24)} DAG`;
 }
 
-function parseFeedDate(text) {
-  const match = text.match(/(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+\d{1,2}\s+[A-Za-z]{3}\s+\d{4}\s+\d{2}:\d{2}:\d{2}\s+(?:GMT|[+-]\d{2}:?\d{2})/);
-  return match ? new Date(match[0]).toISOString() : "";
-}
-
-function titleFromUrl(value) {
+function articleUrlKey(value) {
   try {
-    const segments = new URL(value).pathname.split("/").filter(Boolean);
-    while (segments.length && /^\d+$/.test(segments[segments.length - 1])) segments.pop();
-    const slug = decodeURIComponent(segments[segments.length - 1] || "");
-    return slug.replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim().replace(/^\p{L}/u, (letter) => letter.toLocaleUpperCase("sv"));
+    const url = new URL(value);
+    const host = url.hostname.replace(/^www\./, "");
+    const path = url.pathname.replace(/\/+$/, "");
+    return `${host}${path}`;
   } catch {
-    return "";
+    return value;
   }
 }
 
-function parseProxyFeed(markdown, source, previousArticles) {
-  const content = markdown.split("Markdown Content:").slice(1).join("Markdown Content:");
-  const sections = content.split(/^###\s+/m).slice(1);
-  const previousByUrl = new Map(previousArticles.map((article) => [article.url, article]));
-  const sourceHost = new URL(source.feedUrl).hostname.replace(/^www\./, "");
+function parseRssFeed(xmlText, source, previousArticles) {
+  const document = new DOMParser().parseFromString(xmlText, "application/xml");
+  if (document.querySelector("parsererror")) throw new Error("RSS-källan returnerade ogiltig XML");
+
+  let entries = [...document.getElementsByTagName("item")];
+  if (!entries.length) entries = [...document.getElementsByTagNameNS("*", "entry")];
+  const previousByUrl = new Map(previousArticles.map((article) => [articleUrlKey(article.url), article]));
   const parsed = [];
 
-  for (const section of sections) {
-    const heading = section.match(/^\[(.*?)\]\((https?:\/\/[^)]+)\)/);
-    if (!heading) continue;
+  for (const entry of entries.slice(0, 40)) {
+    const childText = (...names) => {
+      const child = [...entry.children].find((element) => names.includes(element.localName));
+      return child?.textContent?.trim() || "";
+    };
+    const linkElement = [...entry.children].find((element) => element.localName === "link");
+    const url = linkElement?.getAttribute("href") || childText("link");
+    const title = childText("title");
+    const dateText = childText("pubDate", "published", "updated", "date");
+    const published = dateText ? new Date(dateText) : null;
+    if (!title || !url || !/^https?:\/\//i.test(url) || !published || Number.isNaN(published.getTime())) continue;
 
-    const url = heading[2];
-    let articleHost;
-    try {
-      articleHost = new URL(url).hostname.replace(/^www\./, "");
-    } catch {
-      continue;
-    }
-    if (articleHost !== sourceHost && !articleHost.endsWith(`.${sourceHost}`)) continue;
-
-    const oldArticle = previousByUrl.get(url);
-    const published = parseFeedDate(section) || oldArticle?.published;
-    if (!published) continue;
-    const title = heading[1].trim() || oldArticle?.title || titleFromUrl(url);
-    const lines = section.slice(heading[0].length).split("\n");
-    const descriptionLines = lines.filter((line) => {
-      const trimmed = line.trim();
-      if (!trimmed || /^\[?https?:\/\//i.test(trimmed) || /^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+\d{1,2}\s+[A-Za-z]{3}\s+\d{4}/.test(trimmed)) return false;
-      return true;
-    });
-    const description = descriptionLines.join(" ")
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-      .replace(/[*_`>#]/g, "")
+    const oldArticle = previousByUrl.get(articleUrlKey(url));
+    const rawDescription = childText("description", "summary", "encoded", "content");
+    const description = new DOMParser().parseFromString(rawDescription, "text/html").body.textContent
       .replace(/\s+/g, " ")
       .trim()
       .slice(0, 280);
@@ -96,7 +82,7 @@ function parseProxyFeed(markdown, source, previousArticles) {
     parsed.push({
       title,
       url,
-      published,
+      published: published.toISOString(),
       description: description || oldArticle?.description || "",
       sourceId: source.id,
       sourceName: source.name,
@@ -288,12 +274,12 @@ async function refreshLiveFeeds() {
     const timeout = window.setTimeout(() => controller.abort(), 25000);
     try {
       const response = await fetch(`${FEED_PROXY}${source.feedUrl}`, {
-        headers: { "X-No-Cache": "true" },
+        headers: { "X-No-Cache": "true", "X-Return-Format": "html" },
         cache: "no-store",
         signal: controller.signal,
       });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return { source, articles: parseProxyFeed(await response.text(), source, previousArticles) };
+      return { source, articles: parseRssFeed(await response.text(), source, previousArticles) };
     } finally {
       window.clearTimeout(timeout);
     }

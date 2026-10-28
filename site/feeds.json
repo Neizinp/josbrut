@@ -1,0 +1,1513 @@
+{
+  "updatedAt": "2026-10-28T12:38:03.307291+00:00",
+  "sources": [
+    {
+      "id": "omni",
+      "name": "Omni",
+      "home": "https://omni.se"
+    },
+    {
+      "id": "svt",
+      "name": "SVT Nyheter",
+      "home": "https://www.svt.se/nyheter"
+    },
+    {
+      "id": "sydsvenskan",
+      "name": "Sydsvenskan",
+      "home": "https://www.sydsvenskan.se"
+    },
+    {
+      "id": "feber",
+      "name": "Feber",
+      "home": "https://feber.se"
+    },
+    {
+      "id": "sweclockers",
+      "name": "SweClockers",
+      "home": "https://www.sweclockers.com"
+    }
+  ],
+  "articles": [
+    {
+      "title": "180 kvadratmeter stort hus för 7,5 miljoner",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/180-kvadratmeter-stort-hus-for-7-5-miljoner/",
+      "published": "Wed, 28 Oct 2026 12:37:46 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Livsmedelstoppar slår larm: Sverige producerar inte tillräckligt med egen mat",
+      "url": "https://omni.se/livsmedelstoppar-slar-larm-sverige-producerar-inte-tillrackligt-med-egen-mat/a/8G44ar",
+      "published": "Wed, 28 Oct 2026 12:35:44 GMT",
+      "description": "Sverige producerar inte tillräckligt med mat för att klara en svår kris eller krig, skriver flera livsmedelstoppar på Di Debatt. Endast hälften av den mat som svenskarna köper produceras på hemmaplan.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Efter tågkatastrofen – hel cupomgång skjuts upp",
+      "url": "https://www.sydsvenskan.se/sport/efter-olyckan-alla-spanska-cupmatcher-skjuts-upp/",
+      "published": "Wed, 28 Oct 2026 12:35:38 GMT",
+      "description": "Onsdagens matcher i spanska cupen, Copa del Rey, flyttas fram efter tågolyckan utanför Toledo. Spanska fotbollsförbundet (RFEF) meddelar på X att beslutet fattats ”som ett tecken på respekt och solidaritet med alla offer”.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Sjövattenföreningen i Mariefred slipper betala SMS-haveriet",
+      "url": "https://feber.se/mobil/sjovattenforeningen-i-mariefred-slipper-betala-sms-haveriet/497850/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 12:30:00 GMT",
+      "description": "Telenor river miljonfakturan Förra veckan skrev vi lite om en sjövattenförening i Mariefred som åkte på en rätt så rejäl faktura efter ett hårdvarufel i föreningens vattenpumpar började kommunicera oavbrutet via SMS. Trots att föreningen trodde att de hade ett abonnemang med fria",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Snabbtåg i krock i Spanien – minst 40 döda",
+      "url": "https://www.sydsvenskan.se/varlden/snabbtag-i-krock-i-spanien/",
+      "published": "Wed, 28 Oct 2026 12:26:33 GMT",
+      "description": "Två höghastighetståg har kolliderat i centrala Spanien. Minst ett 40-tal människor rapporteras ha omkommit. Sönderslagna tågvagnar ligger vid sidan av banvallen bland förvridna plåtstycken, andra vagnar står och lutar på rälsen.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Man anhållen efter skjutningen i Bagarmossen",
+      "url": "https://omni.se/en-person-anhallen-efter-skjutningen-i-bagarmossen/a/JrmdkR",
+      "published": "Wed, 28 Oct 2026 12:26:10 GMT",
+      "description": "En 36-årig man har gripits efter skjutningen i Bagarmossen söder om Stockholm i fredags, meddelar Åklagarmyndigheten.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Så såg det ut vid olycksplatsen",
+      "url": "https://www.sydsvenskan.se/varlden/sa-sag-det-ut-vid-olycksplatsen/",
+      "published": "Wed, 28 Oct 2026 12:17:18 GMT",
+      "description": "Katastrofscener utspelade sig i Spanien efter den svåra tågolyckan mellan två snabbtåg under tisdagen. Minst 40 människor miste livet. Här är några bilder från olycksplatsen:",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Saamakafolket tar hjälp av GPS för att skydda skogen",
+      "url": "https://omni.se/saamakafolket-tar-hjalp-av-gps-for-att-skydda-skogen/a/ylAA5E",
+      "published": "Wed, 28 Oct 2026 12:16:07 GMT",
+      "description": "Nya vägar tränger allt djupare in i Amazonas regnskog och öppnar tidigare orörda områden för skogsavverkning och guldgruvor. Nu tar Saamakafolket i Surinam hjälp av satellitbilder och GPS för att upptäcka och dokumentera intrång, rapporterar AP.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Företagarna slår larm om oseriösa jobbansökningar",
+      "url": "https://omni.se/foretagarna-slar-larm-om-oseriosa-jobbansokningar/a/b80l05",
+      "published": "Wed, 28 Oct 2026 12:15:38 GMT",
+      "description": "Det är ett stort problem att arbetsgivare får in så många oseriösa jobbansökningar, menar intresseorganisationen Företagarna.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "MFF:aren var hetast i allsvenskan – då kom smällen: ”Inte skitkul”",
+      "url": "https://www.sydsvenskan.se/sport/mff-aren-var-hetast-i-allsvenskan-da-kom-smallen-inte-skitkul/",
+      "published": "Wed, 28 Oct 2026 12:15:23 GMT",
+      "description": "Nathalie Hoff Persson var damallsvenskans bästa framspelare när hon fick en smäll mot knäet och tvingades vila i två månader. Nu är hon tillbaka och på onsdag väntar Ajax i Europa Cup. – Humöret har gått lite upp och ner, men det är skönt att vara tillbaka, säger 29-åringen.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Redhawksstjärnan om islossningen: ”Blir en mental grej”",
+      "url": "https://www.sydsvenskan.se/sport/redhawksstjarnan-om-islossningen-blir-en-mental-grej/",
+      "published": "Wed, 28 Oct 2026 12:15:05 GMT",
+      "description": "Janne Kuokkanen noterades för fem assist när Redhawks körde över Linköping och vann med 8–2. Viktigt, tycker han själv. – Jo, absolut. Det blir en mental grej när man inte gör poäng.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Dolph Lundgren berättar om våra mest banbrytande maskiner",
+      "url": "https://feber.se/film/dolph-lundgren-berattar-om-vara-mest-banbrytande-maskiner/497857/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 12:00:00 GMT",
+      "description": "Ny serie har premiär idag Ikväll klockan 21 sänds det första avsnittet av History's Greatest Machines with Dolph Lundgren på History Channel. Det är en ny serie där Dolph berättar historien om våra mest banbrytande maskiner. Förutom skådespelare och all time actionhjälte är han f",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "OS-hjältarnas kritik: ”Alldeles för dåligt”",
+      "url": "https://www.sydsvenskan.se/sport/os-hjaltarnas-kritik-alldeles-for-daligt/",
+      "published": "Wed, 28 Oct 2026 11:55:03 GMT",
+      "description": "Sverige har dubbla hopp i världstoppen i beachvolleyboll inför OS 2028. Ändå bubblar frustrationen bland stjärnorna mot tävlingsschemat och Internationella volleybollförbundet (FIVB). – Det är för dåligt, säger David Åhman.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Beskedet: 36 länder deltar i Eurovision",
+      "url": "https://www.sydsvenskan.se/noje/beskedet-36-lander-deltar-i-eurovision/",
+      "published": "Wed, 28 Oct 2026 11:41:39 GMT",
+      "description": "Nästa år tävlar 36 länder i Eurovision Song Contest, meddelar EBU. Kanada deltar för första gången – men flera länder bojkottar också tävlingen.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Statliga gruvbolaget LKAB vänder till vinst",
+      "url": "https://omni.se/statliga-gruvbolaget-lkab-vander-till-vinst/a/Qgeeox",
+      "published": "Wed, 28 Oct 2026 11:40:30 GMT",
+      "description": "Kirunabaserade LKAB gjorde en rörelsevinst på 1,6 miljarder kronor i tredje kvartalet. Under samma period förra året gjorde bolaget en förlust på 2,42 miljarder kronor, i samband med stadsflytten i Kiruna.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Chloe, 24: ”Kostnaderna har blivit löjligt höga”",
+      "url": "https://omni.se/24-ariga-chloe-har-blivit-lojligt-dyrt-att-leva/a/oKrrRa",
+      "published": "Wed, 28 Oct 2026 11:38:24 GMT",
+      "description": "Satsningar på unga britter som varken jobbar eller pluggar pekas ut som särskilt intressanta inför onsdagens budget, då finansminister John Healey ska presentera den nya regeringens planer och ambitioner. Det skriver BBC.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "De 9 läskigaste platserna i Lund – så blir Halloween en riktig rysare",
+      "url": "https://www.sydsvenskan.se/lund/de-9-laskigaste-platserna-i-lund-sa-blir-halloween-en-riktig-rysare/",
+      "published": "Wed, 28 Oct 2026 11:33:43 GMT",
+      "description": "Ansvarsfulla spöken, spökhus, spökdisco och skräckfilm. De närmaste dagarna får Lund en ryslig inramning. Här är några av de mest hårresande hållplatserna i höstmörkret.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Siri AI till fler språk med iOS 27.2",
+      "url": "https://feber.se/internet/siri-ai-till-fler-sprak-med-ios-272/497848/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 11:30:00 GMT",
+      "description": "Men kan dröja i EU... I och med dagens 27.2-uppdatering gör Apple sin nya Siri AI tillgänglig för fler användare runt om i världen genom att lägga till stöd för franska, japanska, koreanska, portugisiska och spanska. Den uppgraderade assistenten bygger på Apple Intelligence och k",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Stopp i tågtrafiken på Österlen – tills imorgon",
+      "url": "https://www.svt.se/nyheter/lokalt/skane/stopp-i-tagtrafiken-pa-osterlen-tills-imorgon",
+      "published": "Wed, 28 Oct 2026 12:13:28 +0100",
+      "description": "Det är stopp i tågtrafiken mellan Ystad och Simrishamn. Stoppet beror på ett elfel som har inträffat under förmiddagen.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Brittisk gasavgift slopas – ska ge billigare räkning",
+      "url": "https://omni.se/brittisk-gasavgift-slopas-ska-ge-billigare-rakning/a/kvnonk",
+      "published": "Wed, 28 Oct 2026 11:13:21 GMT",
+      "description": "Den brittiska regeringen slopar den fasta avgiften på gas i ett försök att sänka invånarnas elkostnader. Enligt finansdepartementet sparar många brittiska hushåll i snitt omkring 600 kronor per år tack vare ändringen.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Åklagaren överklagar inte domen efter Tjörnolyckan",
+      "url": "https://omni.se/aklagaren-overklagar-inte-domen-efter-tjornolyckan/a/qy9o41",
+      "published": "Wed, 28 Oct 2026 11:12:52 GMT",
+      "description": "Åklagaren James von Reis kommer inte att överklaga Tjörndomen, rapporterar P4 Göteborg.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Riktigt bra sajt för att bygga IKEA-möbler",
+      "url": "https://feber.se/internet/riktigt-bra-sajt-for-att-bygga-ikea-mobler/497859/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 11:10:00 GMT",
+      "description": "Snygg också Att montera IKEA-möbler är för det mesta ganska enkelt. Det känns ju bara som om det är folk i USA som klagar över detta och att instruktionerna är jobbiga att förstå. De har uppenbarligen inte handlat grejer på Jysk eller Chili så de har väl kanske inte så många refe",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Nyupptäckt dinosaurie såld för över 47 miljoner dollar",
+      "url": "https://feber.se/vetenskap/nyupptackt-dinosaurie-sald-for-over-47-miljoner-dollar/497846/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 11:00:00 GMT",
+      "description": "Nanotyrannus är en mindre version av Tyrannosaurus rex Först trodde man att det var en Tyrannosaurus rex i tonåren, men skelettet visade sig tillhöra en helt nyupptäckt dinosaurieart - Nanotyrannus. Jodi som djuret fått som namn beräknas ha varit runt tre meter lång och haft en v",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Veckans fråga: Hur gammal är den äldsta komponenten i din dator?",
+      "url": "https://www.sweclockers.com/artikel/43342-veckans-fraga-hur-gammal-ar-den-aldsta-komponenten-i-din-dator",
+      "published": "Wed, 28 Oct 2026 12:00:00 +0100",
+      "description": "Grafikkort och processorer byts ofta men nätagget och chassit kan hänga med i ett decennium. Vad är äldst hos dig?",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Hovrätten ändrar domen – två döms för sexuellt ofredande",
+      "url": "https://omni.se/hovratten-andrar-domen-tva-doms-for-sexuellt-ofredande/a/778aPo",
+      "published": "Wed, 28 Oct 2026 10:42:59 GMT",
+      "description": "Två personer döms för sexuellt ofredande mot personer med intellektuella funktionsnedsättningar i Karlstad, meddelar hovrätten för Västra Sverige.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "”Crackgate” ökar pressen inför Apples kvartalsrapport",
+      "url": "https://omni.se/crackgate-okar-pressen-pa-apples-nya-vd-ternus/a/p1ya96",
+      "published": "Wed, 28 Oct 2026 10:41:49 GMT",
+      "description": "Problemen med sprickor i skärmarna på Apples nya vikbara Iphone Duo har snabbt fått namnet ”Crackgate” i sociala medier, rapporterar Financial Times.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "36 länder klara för att tävla i Eurovision nästa år",
+      "url": "https://omni.se/klart-36-lander-tavlar-i-esc-nasta-ar/a/Kr5JK7",
+      "published": "Wed, 28 Oct 2026 10:41:21 GMT",
+      "description": "Nu är det klart att 36 länder kommer att tävla i Eurovision song contest nästa år i Bulgarien, skriver EBU i ett pressmeddelande.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Trump vill förbjuda begreppet AI",
+      "url": "https://feber.se/samhalle/trump-vill-forbjuda-begreppet-ai/497865/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 10:40:00 GMT",
+      "description": "Kräver byte till \"Super Intelligence\" USA:s president Donald Trump uppger att han planerar att förbjuda termen \"artificiell intelligens\" i alla \"relevanta dokument\" framöver, rapporterar Reuters. I ett inlägg på plattformen Truth Social dömer han ut AI som ett \"mycket dåligt och ",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "S-planen på billiga hyresrätter i Malmö har kraschat",
+      "url": "https://www.sydsvenskan.se/malmo/s-plan-pa-billiga-hyresratter-i-malmo-har-kraschat/",
+      "published": "Wed, 28 Oct 2026 10:31:02 GMT",
+      "description": "Malmö dras med landets högsta hyror. Socialdemokraternas hjärteprojekt Mallbo skulle pressa kostnaderna – men har istället kantats av avhopp. Så vem ska egentligen bygga Malmös billiga bostäder nu?",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Sardinska restauranger förbjuder mobiler vid bordet",
+      "url": "https://feber.se/samhalle/sardinska-restauranger-forbjuder-mobiler-vid-bordet/497844/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 10:30:00 GMT",
+      "description": "Byter skärmtid mot sällskapsspel Ett nytt pilotprojekt på Sardinien, lett av öns barnombudsman Anna Cau, uppmuntrar familjer att lägga undan mobiltelefonerna under restaurangbesöket. Hittills har 15 lokala restauranger anslutit sig till ett initiativ där gästerna får lämna ifrån ",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "150 kvadratmeter stort radhus gick för 4,8 miljoner",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/150-kvadratmeter-stort-radhus-gick-for-4-8-miljoner/",
+      "published": "Wed, 28 Oct 2026 10:25:46 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Tävla: Vinn biljetter till Timbuktu på Malmö arena",
+      "url": "https://www.sydsvenskan.se/dygnet-runt/tavla-vinn-biljetter-till-timbuktu-pa-malmo-arena/",
+      "published": "Wed, 28 Oct 2026 10:19:41 GMT",
+      "description": "Skånes största hiphopstjärna ska ställa till med fest på Malmö arena. Den 21 november blir det Timbuktu-dagen och du har nu chans att vinna biljetter till festen.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Senatsmajoriteten kan avgöras först veckor efter valet",
+      "url": "https://omni.se/senatsmajoriteten-kan-avgoras-forst-veckor-efter-valet/a/1olAMW",
+      "published": "Wed, 28 Oct 2026 10:14:30 GMT",
+      "description": "Det kan dröja flera veckor efter det amerikanska mellanårsvalet innan det står klart vilket parti som får majoritet i senaten, rapporterar Axios.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Republikaner oroar sig för väljarflykt i mellanårsvalet",
+      "url": "https://omni.se/republikaner-oroar-sig-for-valjarflykt-i-mellanarsvalet/a/OgxO4A",
+      "published": "Wed, 28 Oct 2026 10:14:21 GMT",
+      "description": "Republikanerna oroar sig för att de egna väljarna ska svika i det amerikanska mellanårsvalet. Samtidigt är engagemanget bland Demokraternas väljare rekordstort, rapporterar Axios.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Statliga gruvjätten LKAB vänder förlust till vinst",
+      "url": "https://www.svt.se/nyheter/lokalt/norrbotten/statliga-gruvjatten-lkab-vander-forlust-till-vinst",
+      "published": "Wed, 28 Oct 2026 11:12:47 +0100",
+      "description": "Den statliga gruvkoncernen LKAB gjorde en rörelsevinst på 1,60 miljarder kronor under årets tredje kvartal. Det kan jämföras med förlusten på 2,42 miljarder under motsvarande kvartal i fjol.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Analyser: M-styre med stöd av SD och C ser hett ut",
+      "url": "https://omni.se/analyser-m-styre-med-stod-av-sd-och-c-ser-hett-ut/a/MAyemr",
+      "published": "Wed, 28 Oct 2026 10:11:20 GMT",
+      "description": "Det är osannolikt att Vänsterpartiet släpper sitt regeringskrav, menar TV4:s politiska expert Marcus Oscarsson. Han tror att partiet med tanke på framgångarna i valet känner att det är ”nu eller aldrig”.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Passageraren: ”Folk kastades ut ur tåget”",
+      "url": "https://omni.se/passageraren-folk-kastades-ut-ur-taget/a/8G4aQr",
+      "published": "Wed, 28 Oct 2026 10:06:36 GMT",
+      "description": "Jesús Jerónimo, 54, befann sig ombord på ett av höghastighetstågen som kolliderade i den dödliga tågolyckan i Spanien. Han arbetade vid sin dator när han plötsligt kastades mot sätet framför sig, berättar han för El País.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Nederländerna vill kapa 25 000 statliga jobb",
+      "url": "https://omni.se/nederlanderna-vill-kapa-25000-statliga-jobb/a/kvn9qv",
+      "published": "Wed, 28 Oct 2026 10:04:29 GMT",
+      "description": "Nederländerna planerar att minska antalet statligt anställda med 25 000 personer, vilket är mer än 15 procent av alla statsanställda, rapporterar Semafor.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Riksbankstoppen: Därför bör du ha en tusenlapp i byrålådan",
+      "url": "https://www.sydsvenskan.se/skane/riksbankstoppen-darfor-bor-du-ha-en-tusenlapp-i-byraladan/",
+      "published": "Wed, 28 Oct 2026 10:04:13 GMT",
+      "description": "Vad gör du om kortläsaren och Swish slutar fungera? Riksbanken vill att alla svenskar ska ha kontanter hemma om krisen eller kriget kommer. Tusen kronor i byrålådan kan göra skillnad, menar förste vice riksbankschef Aino Bunge.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Nu kommer en öppen version av Aston Martin Valhalla",
+      "url": "https://feber.se/bil/nu-kommer-en-oppen-version-av-aston-martin-valhalla/497839/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 10:00:00 GMT",
+      "description": "Kör nercabbat i 350 blås Nu presenterar Aston Martin en ny smak på superbilen Valhalla och det är Spider. Det här är alltså en öppen version av modellen och något du kan köra nercabbat med i 350 blås om du skulle vilja. När regnet väl kommer finns det ett tygtak att montera på, m",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Apple lanserar Macbook Pro och Imac med M6-systemkrets",
+      "url": "https://www.sweclockers.com/artikel/43341-apple-lanserar-macbook-pro-och-imac-med-m6-systemkrets",
+      "published": "Wed, 28 Oct 2026 10:55:41 +0100",
+      "description": "Båda modellerna blir en tusenlapp dyrare.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Malmöregissören hoppar av sitt nya jobb – före tillträdet",
+      "url": "https://www.sydsvenskan.se/dygnet-runt/malmoregissoren-hoppar-av-sitt-nya-jobb-fore-tilltradet/",
+      "published": "Wed, 28 Oct 2026 09:55:16 GMT",
+      "description": "Nyss tillkännagav Folkteatern i Göteborg att Malmöregissören Iggy Malmborg skulle bli teaterns konstnärliga ledare. Nu kommer beskedet att han lämnar uppdraget, ”av personliga skäl”.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Fotografen Linus Sandgren ska arbeta med ”Ghost rider”",
+      "url": "https://omni.se/fotografen-linus-sandgren-ska-arbeta-med-ghost-rider/a/JrmeVm",
+      "published": "Wed, 28 Oct 2026 09:46:41 GMT",
+      "description": "Svenska Linus Sandgren har anlitats som fotograf för den nya storfilmen ”Ghost rider” med Ryan Gosling i huvudrollen. Det rapporter Hollywood Reporter.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Därför skyltar Trafikverket mot Långskogen vid nya E45 i Härjedalen",
+      "url": "https://www.svt.se/nyheter/lokalt/jamtland/darfor-skyltar-trafikverket-mot-langskogen-vid-nya-e45-i-harjedalen",
+      "published": "Wed, 28 Oct 2026 10:41:15 +0100",
+      "description": "Den nya sträckningen av E45 mellan Rengsjön och Älvros har blivit klar före utsatt tid. Men Trafikverkets val av skyltning väcker reaktioner.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Vinnaren av SM i nyskrivna snapsvisor korad",
+      "url": "https://tjock.se/strupen/vinnaren-av-sm-i-nyskrivna-snapsvisor-korad/497847/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 09:30:00 GMT",
+      "description": "Grattis Ola! Sedan 1995 har Spritmuseum anordnat SM i nyskrivna snapsvisor. Nu har en ny svensk mästare utsetts och det handlar om Ola Ljunggren Bergeå från Uppsala. Ola vann med bidraget \"Snaps åt alla\" som även vann publikens pris. Idén till visan kom när han började koppla iho",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Mobilfri stugsemester gav ökad återhämtning",
+      "url": "https://omni.se/mobilfri-stugsemester-gav-okad-aterhamtning/a/PgblP6",
+      "published": "Wed, 28 Oct 2026 09:27:04 GMT",
+      "description": "Några dagar utan mobiltelefon och internet kan ge ökat lugn, större närvaro och mer meningsfull tid tillsammans med andra. Det skriver Linnéuniversitet i ett pressmeddelande om en ny studie.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Kinas bilindustri pressar omvärlden men krisar hemma",
+      "url": "https://omni.se/kinas-bilindustri-pressar-omvarlden-men-krisar-hemma/a/9k7wyp",
+      "published": "Wed, 28 Oct 2026 09:13:39 GMT",
+      "description": "Samtidigt som den kinesiska bilindustrin får den europeiska marknaden att blöda har biltillverkarna det tufft på hemmaplan, skriver Wall Street Journal.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Allt mer avancerade kopior dyker upp i Roblox",
+      "url": "https://feber.se/spel/allt-mer-avancerade-kopior-dyker-upp-i-roblox/497855/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 09:10:00 GMT",
+      "description": "Nya projekt i plattformen liknar originalen allt mer Att man kan göra Temu-versioner av diverse spel i Roblox är ju inget nytt, men den senaste vågen av kopior som kan spelas i plattformen har gjort spelen nästan identiska med originalen. Ett gäng personer har nämligen lagt upp v",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "MFF uppges vilja förlänga med stjärnan Christiansen",
+      "url": "https://omni.se/mff-uppges-vilja-forlanga-med-stjarnan-christiansen/a/p1yRA1",
+      "published": "Wed, 28 Oct 2026 09:09:35 GMT",
+      "description": "Malmö FF har erbjudit den 36-årige mittfältsstjärnan Anders Christiansen ett nytt kontrakt. Det uppger källor för Sportbladet.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Över 40 personer döda i tågolycka i Spanien",
+      "url": "https://omni.se/minst-tio-personer-har-dott-i-en-tagolycka-i-spanien/a/L3rbPJ",
+      "published": "Wed, 28 Oct 2026 09:07:03 GMT",
+      "description": "Över 40 personer har omkommit efter att två höghastighetståg kolliderat i Urda söder om Toledo i Spanien, uppger räddningstjänsten för spanska medier. Uppgifterna om dödssiffran går isär. Två tågvagnar ska ha spårat ur och fallit nerför en slänt.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "”Gen Z” inte redo att överlåta dejtandet åt AI",
+      "url": "https://omni.se/gen-z-inte-redo-att-overlata-dejtandet-at-ai/a/oKrOqj",
+      "published": "Wed, 28 Oct 2026 09:04:35 GMT",
+      "description": "Dejtandet är på uppgång bland unga i USA och villigheten att betala för dejtingappar har ökat, enligt en undersökning från Bloomberg Intelligence.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "S-källor kritiska mot det egna partiets förberedelser",
+      "url": "https://omni.se/s-kallor-kritiska-mot-det-egna-partiets-forberedelser/a/vlRJ04",
+      "published": "Wed, 28 Oct 2026 09:02:58 GMT",
+      "description": "Flera källor inom Socialdemokraterna är kritiska mot det egna partiets förberedelser inför regeringsbildningen, rapporterar Aftonbladet.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Buda hem Aviciis gamla mixerbord",
+      "url": "https://feber.se/pryl/buda-hem-aviciis-gamla-mixerbord/497841/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 09:00:00 GMT",
+      "description": "Eller Jocke Bergs kängor Just nu ligger Aviciis gamla mixerbord ute på Tradera. Mixerbordet som är ett Traktor Kontrol S2 användes under inspelningen av dokumentären Avicii: True Stories och fungerar fortfarande som det ska. Tim signerade bordet 2017 och autografen finns kvar. Au",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "ShowCase: Asus ProArt P16 – avancerad AI i en laptop",
+      "url": "https://www.sweclockers.com/artikel/43303-showcase-asus-proart-p16-avancerad-ai-i-en-laptop",
+      "published": "Wed, 28 Oct 2026 10:00:00 +0100",
+      "description": "Med RTX Spark under huven kan Asus ProArt P16 köra stora AI-modeller lokalt.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Prinsen kritiserade Infantino – riskerar straff",
+      "url": "https://www.sydsvenskan.se/sport/prinsen-kritiserade-infantino-riskerar-straff/",
+      "published": "Wed, 28 Oct 2026 08:52:30 GMT",
+      "description": "Prins Ali, ordförande för Jordaniens fotbollsförbund, har kritiserat Fifa-ordföranden Gianni Infantino. För det kan han komma att straffas – Asiens fotbollsförbund har startat en utredning mot prinsen.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Rättegången inleds i dag – hålls bakom stängda dörrar",
+      "url": "https://omni.se/rattegangen-mot-sjukskoterskan-halls-bakom-stangda-dorrar/a/L3rRoq",
+      "published": "Wed, 28 Oct 2026 08:48:00 GMT",
+      "description": "I dag inleds rättegången mot den manliga sjuksköterska som misstänks ha våldtagit en kvinnlig patient som vårdades i livets slutskede, rapporterar SVT Nyheter Jönköping.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Trots stort tapp – SD tar plats i fler kommunstyren",
+      "url": "https://omni.se/trots-stort-tapp-sd-tar-plats-i-fler-kommunstyren/a/w3lzLd",
+      "published": "Wed, 28 Oct 2026 08:47:35 GMT",
+      "description": "Trots att Sverigedemokraterna tappade i över 200 kommuner i valet kommer partiet att ta plats i betydligt fler lokala styren jämfört med den förra mandatperioden. Det rapporterar Dagens Samhälle.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Ingen vill samarbeta med arabiska partier – men finns det något alternativ?",
+      "url": "https://omni.se/ingen-vill-samarbeta-med-arabiska-partier-men-finns-det-nagot-alternativ/a/778z3w",
+      "published": "Wed, 28 Oct 2026 08:45:29 GMT",
+      "description": "Inget enskilt parti har någonsin uppnått de 61 mandat som krävs för att bilda majoritetsregering i Knesset, skriver The Guardian. Och gårdagens val pekar inte mot något trendbrott.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Flera dödsolyckor i spansk tågtrafik i år – fack larmade",
+      "url": "https://omni.se/manga-skadade-i-tagolycka-i-spanien/a/w3lzzo",
+      "published": "Wed, 28 Oct 2026 08:40:09 GMT",
+      "description": "Onsdagens kollision är den senaste i raden av dödliga tågolyckor i Spanien i år. I januari inträffade fyra allvarliga tågolyckor på bara fem dagar. Bland annat dog 46 personer och över 100 skadades när ett tåg spårade ur och träffade ett mötande tåg i Adamuz i Andalusien.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Sverige stoppar ChatGPT och Claude hos myndigheter",
+      "url": "https://feber.se/samhalle/sverige-stoppar-chatgpt-och-claude-hos-myndigheter/497853/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 08:40:00 GMT",
+      "description": "Förbjuder oreglerade AI-tjänster för att skydda känslig information Svenska myndigheter har nu bestämt sig för att förbjuda anställda att använda AI-tjänster som ChatGPT och Claude på jobbet på grund av oro för informationssäkerheten. Beslutet kommer efter en granskning som kom f",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Två tåg har kolliderat i Spanien – många döda",
+      "url": "https://www.svt.se/nyheter/utrikes/tva-tag-har-krockat-i-spanien",
+      "published": "Wed, 28 Oct 2026 09:35:35 +0100",
+      "description": "Två tåg har krockat på höghastighetsbanan mellan Madrid och Sevilla. Det ena uppges ha kört på det andra med en kraftig kollision som följd, och enligt initiala uppgifter från lokala myndigheter har minst 46 personer omkommit.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Valmyndigheten: Vi är redo för extraval",
+      "url": "https://www.svt.se/nyheter/inrikes/valmyndigheten-vi-ar-redo-for-extraval",
+      "published": "Wed, 28 Oct 2026 09:30:14 +0100",
+      "description": "Riksdagen har efter ett försök inte lyckats rösta fram en ny regering. Om man misslyckas med alla fyra försök väntar extraval. – Vi är redo, säger Valmyndighetens kanslichef Anna Nyqvist.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Fler privatleasingalternativ för ID. Polo och ID. Cross",
+      "url": "https://feber.se/bil/fler-privatleasingalternativ-for-id-polo-och-id-cross/497840/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 08:30:00 GMT",
+      "description": "Får det lov att vara en GTI? Om du har kikat på att privatleasa en ID. Polo eller ID. Cross kommer nu fler erbjudanden att välja mellan. Enligt Volkswagen har hittills runt 60 procent av privatkunderna valt privatleasing när de handlat ID. Polo. Insteget om man vill ha en Polo är",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Sporten Direkt",
+      "url": "https://www.sydsvenskan.se/sport/sydsvenskan-sport-direkt-de-senaste-nyheterna/",
+      "published": "Wed, 28 Oct 2026 08:23:13 GMT",
+      "description": "Följ nyhetsflödet i Sporten Direkt. Först med det senaste i sportens värld.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "”Elin” skulle titta på lägenhet – blev sexuellt ofredad",
+      "url": "https://omni.se/elin-skulle-titta-pa-lagenhet-blev-sexuellt-ofredad/a/WgpzjQ",
+      "published": "Wed, 28 Oct 2026 08:18:47 GMT",
+      "description": "2016 skulle den då 19-åriga ”Elin” titta på en lägenhet när hon blev sexuellt ofredad av hyresvärden. Hon är inte ensam, de senaste tio åren har 1 114 hyresvärdar dömts för brott, enligt en kartläggning från Hem och Hyra.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Lärare och poliser: Måste göras mer förebyggande",
+      "url": "https://omni.se/larare-och-poliser-maste-goras-mer-forebyggande/a/zlpKl5",
+      "published": "Wed, 28 Oct 2026 08:17:00 GMT",
+      "description": "Sveriges Lärare och Polisförbundet kräver fler och större politiska satsningar på brottsförebyggande arbete. På Expressens debattsida skriver ordförandena Anna Olskog och Katharina von Sydow att det inte räcker att lägga pengar på polisiära resurser och brottsbekämpande verktyg.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Sydsvenskan Direkt",
+      "url": "https://www.sydsvenskan.se/sydsvenskan-direkt/",
+      "published": "Wed, 28 Oct 2026 08:16:41 GMT",
+      "description": "Följ nyhetsflödet i Sydsvenskan Direkt – först med det senaste från Malmö, Lund, Skåne och Danmark.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Hus på 113 kvm såldes för 4,6 miljoner",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/hus-pa-113-kvm-saldes-for-4-6-miljoner/",
+      "published": "Wed, 28 Oct 2026 08:13:46 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Hur kunde det antirasistiska monumentet i Malmö bli så … dåligt?",
+      "url": "https://www.sydsvenskan.se/kultur/hur-kunde-det-antirasistiska-monumentet-i-malmo-bli-sa-daligt/",
+      "published": "Wed, 28 Oct 2026 08:12:44 GMT",
+      "description": "Utförandet håller inte, skriver konstvetaren Linda Fagerström om ”Master narratives” på Falsterboplan. Stenblocket är för stort, och ser ut som en ostbit. Bronsstavarna ger intryck av att ha beställts per meter i trappräckesfabriken.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Stilla på börsen – SSAB rapportfaller",
+      "url": "https://omni.se/stockholmsborsen-inleder-avvaktande-ssab-backar/a/JrmeOP",
+      "published": "Wed, 28 Oct 2026 08:03:41 GMT",
+      "description": "Stockholmsbörsen handlas kring nollan på onsdagen. Vid 12-tiden står indexen: · OMXS30: +0,1 % · OMXSPI: +0,1 % Det var teknikrusning på Seoulbörsen i morse efter att minneschipjätten SK Hynix överträffat förväntningarna för tredje kvartalet.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Notch säljer sin vräkiga lyxvilla",
+      "url": "https://tjock.se/hemmet/notch-saljer-sin-vrakiga-lyxvilla/497843/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 08:00:00 GMT",
+      "description": "Köpte för 70 miljoner dollar Minecraft-grundaren Markus \"Notch\" Persson har som bekant gjort sig en slant på spelet. Samma år som han sålde sitt bolag Mojang till Microsoft för 2,5 miljarder dollar köpte han ett litet hus för en del av pengarna. Eller ja, det är väl kanske inte s",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Experter: Parlamentarismen fungerar inte som tänkt",
+      "url": "https://omni.se/experter-parlamentarismen-fungerar-inte-som-tankt/a/778zdw",
+      "published": "Wed, 28 Oct 2026 07:59:13 GMT",
+      "description": "Dagens riksdagspartier agerar inte som grundlagsberedningen om negativ parlamentarism hade tänkt för 60 år sedan, och det skapar problem. Det skriver två statsvetare vid Göteborgs universitet på SvD Debatt.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Oklart vart Bolsonaro flytt – uppgifterna går isär",
+      "url": "https://omni.se/oklart-vart-bolsonaro-flytt-uppgifterna-gar-isar/a/31AGke",
+      "published": "Wed, 28 Oct 2026 07:47:27 GMT",
+      "description": "Flávio Bolsonaro tycks ha flytt Brasilien efter att ha förlorat presidentvalet. Men vart han tagit vägen är fortfarande oklart.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Otåliga EU-ledare inför egna regler för sociala medier",
+      "url": "https://omni.se/otaliga-eu-ledare-infor-egna-regler-for-sociala-medier/a/Jrm89X",
+      "published": "Wed, 28 Oct 2026 07:43:34 GMT",
+      "description": "I väntan på att EU:s förslag om en 13-årsgräns i sociala medier ska antas går flera europeiska länder vidare med egna åldersgränser. Bland annat Grekland, Portugal och Italien arbetar för att få nya lagstiftningar på plats, skriver Politico.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Delåren: Epiroc faller – Electrolux Pro rapportlyfter",
+      "url": "https://omni.se/delaren-scania-och-peab-ser-minskad-orderingang/a/oKr24R",
+      "published": "Wed, 28 Oct 2026 07:37:26 GMT",
+      "description": "Under dagen har en rad bolag redovisat sina delårsrapporter. Här kan du följa vår rapportering av de viktigaste.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Larmet från L:s SKR-grupp: ”Oliktänkande rensas ut”",
+      "url": "https://omni.se/larmet-fran-l-s-skr-grupp-oliktankande-rensas-ut/a/BMQ9ol",
+      "published": "Wed, 28 Oct 2026 07:37:04 GMT",
+      "description": "Flera personer som representerar Liberalerna i Sveriges Kommuner och Regioner, SKR, har petats eller uppmanats att sluta. Det rapporterar SR Ekot.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "TCC-rörelsen mer aktiv efter Fagersta-dådet",
+      "url": "https://omni.se/tcc-rorelsen-mer-aktiva-efter-fagersta-dadet/a/WgpMJr",
+      "published": "Wed, 28 Oct 2026 07:37:04 GMT",
+      "description": "Den våldsbejakande rörelsen True Crime Community, TCC, är mer aktiv sedan skoldådet i Fagersta. Det uppger polisen för DN.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Både Liseberg och Skansen har haft dataintrång",
+      "url": "https://feber.se/internet/bade-liseberg-och-skansen-har-haft-dataintrang/497845/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 07:30:00 GMT",
+      "description": "Personuppgifter kan ha läckt Nu meddelar både Liseberg och Skansen att det har skett ett dataintrång i deras bokningssystem. Personuppgifter kan ha läckt ut och Liseberg fick informationen från systemleverantören för bokningssystemet igår eftermiddag. Hur många som är drabbade är",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Ledare: SD bör slopa sitt regeringskrav och hjälpa Ulf",
+      "url": "https://omni.se/ledare-sd-bor-slopa-sitt-regeringskrav-och-hjalpa-ulf/a/zlp2x9",
+      "published": "Wed, 28 Oct 2026 07:16:23 GMT",
+      "description": "De svenska ledarsidorna söker fortfarande efter svar på frågan hur det ska gå med regeringsbildningen.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Arbetslösa söker fler jobb vid striktare granskning",
+      "url": "https://omni.se/arbetslosa-soker-fler-jobb-vid-striktare-granskning/a/X9X17r",
+      "published": "Wed, 28 Oct 2026 07:16:20 GMT",
+      "description": "Att granska arbetslösas aktivitetsrapporter mer noggrant leder till att de söker fler jobb och hittar ett nytt jobb snabbare. Det visar en ny rapport från Institutet för arbetsmarknads- och utbildningspolitisk utvärdering, Ifau.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "SSAB: Satsningen på fossilfritt stål följer tidsplanen",
+      "url": "https://omni.se/ssab-satsningen-pa-fossilfritt-stal-foljer-tidsplanen/a/R5g04r",
+      "published": "Wed, 28 Oct 2026 07:03:32 GMT",
+      "description": "Svenska SSAB:s satsning på fossilfri stålproduktion i Luleå går enligt plan, skriver bolaget i kvartalsrapporten som släpptes i dag.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Lekkerimäki hjälte i mäktig Vancouvervändning",
+      "url": "https://omni.se/lekkerimaki-hjalte-i-maktig-vancouvervandning/a/xl627Q",
+      "published": "Wed, 28 Oct 2026 07:02:58 GMT",
+      "description": "Vancouver Canucks stod för en mäktig upphämtning när laget vände 2–5 till seger med 6–5 efter förlängning mot Anaheim Ducks. Svenske Jonathan Lekkerimäki blev stor hjälte med två mål på 49 sekunder i slutminuterna.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
+    },
+    {
+      "title": "Snart är det slut på Stockholms rabatterade månadskorten",
+      "url": "https://feber.se/samhalle/snart-ar-det-slut-pa-stockholms-rabatterade-manadskorten/497837/?utm_source=rss&utm_medium=feed",
+      "published": "Wed, 28 Oct 2026 07:00:00 GMT",
+      "description": "Skynda att fynda Passande nog lagom till valet i höstas bestämdes det att folk i hela landet skulle kunna köpa månadskort till halva priset tack vare ett tillfälligt statligt stöd. Den kampanjen närmar sig dock nu sitt slut och för Stockholmsresenärer innebär det att man måste kö",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Jonas, 51: ”Jag minns honom genom mig själv, hur jag går och står”",
+      "url": "https://www.sydsvenskan.se/inpa-livet/jonas-51-jag-minns-honom-genom-mig-sjalv-hur-jag-gar-och-star/",
+      "published": "Wed, 28 Oct 2026 06:46:59 GMT",
+      "description": "Jonas Dahlströms pappa dog för ett år sedan. Ändå finns han kvar. I de egna kroppsrörelserna, i minnet, fotosamlingen och i kameran i sig. – Varje gång jag fotograferar är han där med mig.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Labbutrustning för hundratusentals kronor försvann – Lunds universitet märkte inget",
+      "url": "https://www.sydsvenskan.se/lund/labbutrustning-for-hundratusentals-kronor-forsvann-lunds-universitet-markte-inget/",
+      "published": "Wed, 28 Oct 2026 06:44:20 GMT",
+      "description": "Vid husrannsakan hos en hälare i Landskrona hittade polisen avancerad utrustning som verkade tillhöra Lunds universitet. De dyrbara instrumenten hade stulits tre år tidigare, men ingen på universitetet hade märkt något. – Vi måste dra lärdomar, säger Ola Wendt på Kemiska institut",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Misstänkt farligt föremål i Ladugårdsängen i Örebro var inte skarpt",
+      "url": "https://www.svt.se/nyheter/lokalt/orebro/misstankt-farligt-foremal-i-ladugardsangen-i-orebro",
+      "published": "Wed, 28 Oct 2026 07:28:04 +0100",
+      "description": "Polisen spärrade under morgonen av ett område i Ladugårdsängen i Örebro på grund av ett misstänkt farligt föremål. Vid 9-tiden kom nationella bombskyddet till platsen för att undersöka föremålet. Strax efter 10 meddelades att föremålet inte var skarpt.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Här är vinnarna och förlorarna i Israels ödesval",
+      "url": "https://www.sydsvenskan.se/varlden/har-ar-vinnarna-och-forlorarna-i-israels-odesval/",
+      "published": "Wed, 28 Oct 2026 06:17:46 GMT",
+      "description": "Vinnarna i det israeliska valet ser ut att bli de arabiska partierna, medan de högerextrema står som förlorare. Vem som tar makten är dock en fråga som hänger i luften dagen efter landets ”ödesval”.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Nya ägare till villa",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/nya-agare-till-villa-rJTmt/",
+      "published": "Wed, 28 Oct 2026 06:02:32 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Villa i Malmö såld – för 5,9 miljoner",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/villa-i-malmo-sald-for-5-9-miljoner/",
+      "published": "Wed, 28 Oct 2026 06:02:24 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Nya ägare tar över villa",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/nya-agare-tar-over-villa-wdXZy/",
+      "published": "Wed, 28 Oct 2026 06:02:18 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Nya ägare till villa",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/nya-agare-till-villa-1bw_G/",
+      "published": "Wed, 28 Oct 2026 06:02:16 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Fastigheten på Jönelsborgsvägen 56-30 i Kävlinge såld för 200 000",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/fastigheten-pa-jonelsborgsvagen-56-30-i-kavlinge-sald-for-200-000/",
+      "published": "Wed, 28 Oct 2026 06:02:01 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "147 kvadratmeter stort hus för 4,3 miljoner",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/147-kvadratmeter-stort-hus-for-4-3-miljoner/",
+      "published": "Wed, 28 Oct 2026 06:01:55 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Nya ägare till villa",
+      "url": "https://www.sydsvenskan.se/fastighetsaffarer/nya-agare-till-villa-MMr7A/",
+      "published": "Wed, 28 Oct 2026 06:01:53 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Sjuksköterska åtalad för våldtäkt mot patient – nu inleds rättegången",
+      "url": "https://www.svt.se/nyheter/lokalt/jonkoping/sjukskoterska-atalad-for-valdtakt-mot-patient-nu-inleds-rattegangen",
+      "published": "Wed, 28 Oct 2026 07:00:05 +0100",
+      "description": "Den manliga sjuksköterska som står åtalad misstänkt för grov våldtäkt på en patient som vårdades i livets slutskede på länssjukhuset Ryhov i Jönköping såg märkbart tagen ut när han kom in i rättssalen. På onsdagen inleddes rättegången bakom stängda dörrar – SVT:s reporter fick ba",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Inga katastrofer efter it-larm: ”Behöver vänja oss”",
+      "url": "https://www.sydsvenskan.se/sverige/inga-katastrofer-efter-it-larm-behover-vanja-oss/",
+      "published": "Wed, 28 Oct 2026 05:52:21 GMT",
+      "description": "Förra veckans larm om kritiska problem i programmeringsspråket PHP fick webbsajter världen över att stängas ned i all hast. Men hackare verkar hittills inte ha lyckats utnyttja säkerhetshålen i någon större skala. – Vi kommer nog att behöva vänja oss vid den här typen av sårbarhe",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Allt de unga erbjuds är brutna löften, status quo och tårgas",
+      "url": "https://www.sydsvenskan.se/opinion/kolumnen/allt-de-unga-erbjuds-ar-brutna-loften-status-quo-och-targas/",
+      "published": "Wed, 28 Oct 2026 05:46:00 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "E45 utanför Trollhättan öppen igen efter trafikolycka",
+      "url": "https://www.svt.se/nyheter/lokalt/vast/e45-utanfor-trollhattan-avstangd-efter-olycka",
+      "published": "Wed, 28 Oct 2026 06:34:20 +0100",
+      "description": "Runt 06.15 inträffade en trafikolycka på E45 vid Stallbackabron utanför Trollhättan och vägen stängdes av helt i norrgående riktning. Vid 07.05 meddelar räddningstjänsten att vägen är öppen igen.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Sabine, 37, ser broderns tröjnummer dyka upp överallt i vardagen",
+      "url": "https://www.sydsvenskan.se/inpa-livet/sabine-37-ser-broderns-trojnummer-dyka-upp-overallt-i-vardagen/",
+      "published": "Wed, 28 Oct 2026 05:30:00 GMT",
+      "description": "Sedan Sabine Harmby miste sin bror dyker siffran 31 upp mest hela tiden. 31 var Merlin Nuhanovics nummer på fotbollsplanen. – För den som inte tror är det en slump. För mig är det ett bevis på att han finns med mig. Jag behöver känna det för att orka.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Ulrika, 53: ”Omöjligt för mig att tro att Lovisa inte finns”",
+      "url": "https://www.sydsvenskan.se/inpa-livet/ulrika-53-omojligt-for-mig-att-tro-att-lovisa-inte-finns/",
+      "published": "Wed, 28 Oct 2026 05:30:00 GMT",
+      "description": "Ulrika Rydström är Lovisas mamma. Det kommer hon alltid att vara. Sorgen är bottenlös, Lovisa dog i cancer bara fem och ett halvt år gammal. Men det betyder inte att relationen till dottern har upphört eller att kärleken blivit mindre levande.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "HBK-profilerna i MFF: ”De ligger väl sist, va?”",
+      "url": "https://www.sydsvenskan.se/sport/hbk-profilerna-i-mff-de-ligger-val-sist-va/",
+      "published": "Wed, 28 Oct 2026 05:14:00 GMT",
+      "description": "De var supertalangerna i Halmstads BK som nu spelar för Malmö FF. Sead Haksabanovic och Bleon Kurtulus återvänder till Örjans vall med blandade känslor för den krisande moderklubben. – Man får ju hoppas på det bästa för dem, men det är i Malmö jag har mitt fokus, säger Bleon Kurt",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Direktrapport om kriget i Ukraina och säkerhetsläget i Europa",
+      "url": "https://www.sydsvenskan.se/varlden/direktrapport-om-kriget-i-ukraina-och-sakerhetslaget-i-europa/",
+      "published": "Wed, 28 Oct 2026 05:05:01 GMT",
+      "description": "Följ vår direktrapportering om kriget i Ukraina och säkerhetsläget i Europa.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "OpenBF2 återskapar Battlefield 2 som öppen källkod",
+      "url": "https://www.sweclockers.com/artikel/43338-openbf2-aterskapar-battlefield-2-som-oppen-kallkod",
+      "published": "Wed, 28 Oct 2026 06:00:00 +0100",
+      "description": "Nytt projekt använder AI för att dekompilera och baklängeskonstruera det klassiska spelet.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Trots två ihjälskjutna i oktober – färre dödsskjutningar i Stockholm",
+      "url": "https://www.svt.se/nyheter/lokalt/stockholm/trots-tva-dodsskjutningar-i-oktober-farre-skjuts-ihjal-i-stockholm",
+      "published": "Wed, 28 Oct 2026 05:51:49 +0100",
+      "description": "En 25-årig man i Bagarmossen och en kvinnlig fritidsledare i 25-årsåldern Älvsjö har skjutits ihjäl de senaste veckorna. I somras sköts en man i 25-årsåldern ihjäl i Hässelby. Statistik visar att dödsskjutningarna i både staden, länet och landet ser ut att hamna på lägre nivå än ",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Eko-bonden Charlott uppsagd av Arla: ”Det känns lite som ett svek”",
+      "url": "https://www.svt.se/nyheter/lokalt/smaland/eko-bonden-charlott-uppsagd-av-arla-det-kanns-lite-som-ett-svek",
+      "published": "Wed, 28 Oct 2026 05:30:09 +0100",
+      "description": "Charlott Lindgren har drivit sin gård sedan hon tog över efter föräldrarna 2020. Sedan dess har hon levererat ekologisk mjölk till Arla, men nyss fick hon ett samtal från företaget. Budskapet – du har blivit uppsagd.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Spindelväv, spökljud och gamla saker – så lyckas du med Halloween",
+      "url": "https://www.svt.se/nyheter/lokalt/dalarna/spindelvav-spokljud-och-gamla-saker-sa-lyckas-du-med-halloween",
+      "published": "Wed, 28 Oct 2026 05:30:09 +0100",
+      "description": "Halloween ligger runt knuten och planer på årets läskigheter är kanske i full gång. Men hur mycket får man egentligen skrämmas? SVT Dalarna tog hjälp av en expert på kusligheter: Häxan på Tomteland i Mora.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "De växte upp i gängkrigets centrum – 31 döda på 14 år",
+      "url": "https://www.svt.se/nyheter/granskning/ug/de-vaxte-upp-i-gangkrigets-centrum-31-doda-pa-14-ar",
+      "published": "Wed, 28 Oct 2026 05:30:09 +0100",
+      "description": "31 personer har dödats sedan gängkriget mellan nätverken i norra och södra Biskopsgården bröt ut i Göteborg. 2017 mötte Uppdrag granskning pojkar i fjärde klass som växte upp mitt i konflikten. När redaktionen nu återvänder, nästan tio år senare, är pojkarna vuxna. – Biskopsgårde",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Därför spreds radhusbranden i Arboga så fort: ”Aldrig varit med om något liknande”",
+      "url": "https://www.svt.se/nyheter/lokalt/vastmanland/darfor-spreds-radhusbranden-i-arboga-sa-fort-aldrig-varit-med-om-liknande",
+      "published": "Wed, 28 Oct 2026 05:30:09 +0100",
+      "description": "Sju minuter efter larmsamtalet brann hela radhuset i Arboga. Inga människor skadades allvarligt, men lärdomarna är många, och sprids nu över hela landet. – Flera faktorer samverkade på sätt som vi inte har sett förut, säger Sanna Ohlsson, brandingenjör.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Havsörnen breder ut sina vingar längs Norrbottenskusten",
+      "url": "https://www.svt.se/nyheter/lokalt/norrbotten/havsornen-breder-ut-sina-vingar-langs-norrbottenskusten",
+      "published": "Wed, 28 Oct 2026 05:30:09 +0100",
+      "description": "För 20 år sedan fanns det ett häckande havsörnspar i Norrbotten. Idag räknar man till över femtio par. – Det visar på att det kan ske någonting positivt, säger Bert-Ove Lindström, Norrbottens ornitologiska förening.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Hemvärnets nya materiel – drönare och digitala system",
+      "url": "https://www.svt.se/nyheter/lokalt/ost/hemvarnets-nya-materiel-dronare-och-digitala-system",
+      "published": "Wed, 28 Oct 2026 05:30:09 +0100",
+      "description": "Efter Rysslands fullskaliga invasion i Ukraina och det svenska Nato-medlemskapet har Hemvärnet moderniserats och genomgått stora förändringar. I Östergötland består Hemvärnet av Livgrenadjärgruppens två bataljoner.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Rögles Mark Friedman blodig – kastade handsken: ”Var förbannad”",
+      "url": "https://www.svt.se/sport/ishockey/rogles-mark-friedman-blodig-kastade-handsken-var-forbannad",
+      "published": "Tue, 27 Oct 2026 22:47:57 +0100",
+      "description": "Rögles Mark Friedman fick en Frölundaklubba rätt över munnen, blödde och blev skogstokig med en kastad handske. – Jag var bara förbannad över att jag blev uppskuren igen. Det var allt, säger han till Aftonbladet.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Arsenals fiasko – förlorade mot League Two-laget Fleetwood",
+      "url": "https://www.svt.se/sport/fotboll/viktor-gyokeres-slar-till-forsta-malet-for-sasongen-i-arsenal",
+      "published": "Tue, 27 Oct 2026 22:27:33 +0100",
+      "description": "Sanslös skräll i ligacupen. League Two-laget Fleetwood slog ut Arsenal efter straffar och är klara för kvartsfinal. Trots att Viktor Gyökeres gjorde säsongens första mål för ”The Gunners”.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Sverige vann EM-premiären – trots svårspelad is: ”Som en feberdröm”",
+      "url": "https://www.svt.se/sport/curling/sverige-vann-em-premiaren-trots-svarspelad-is-som-en-feberdrom",
+      "published": "Tue, 27 Oct 2026 21:20:07 +0100",
+      "description": "Lag Isabella Wranå vann planenligt premiärmatchen mot Estland i EM med 8–4. Men den svårspelade och långsamma isen i Tjeckien oroar. – Någonting måste ha gått lite fel när man preparerade isen i dag, säger Isabella Wranå efter segern.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Polestar 4 har fått bakruta och blivit rolig att köra!",
+      "url": "https://feber.se/bil/polestar-4-har-fatt-bakruta-och-blivit-rolig-att-kora/497791/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 20:00:00 GMT",
+      "description": "Men marknadsgänget har identitetskris Polestar 4 var inte en dålig bil när den lanserades. Den var bara inte riktigt en Polestar. Den där körglädjen som vi hittat i Polestar 1, 2 och 3 fanns helt enkelt inte riktigt där. Det gjorde mig besviken, men jag vet helt ärligt inte om sp",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Gemini släpps till Google TV i Sverige",
+      "url": "https://feber.se/internet/gemini-slapps-till-google-tv-i-sverige/497830/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 19:30:00 GMT",
+      "description": "Här är enheterna som får stödet Google ser ut att rulla ut AI-assistenten Gemini på Google TV till fler länder, som bland annat inkluderar Sverige, Norge, Danmark och Finland. Funktionen expanderar därmed till 24 marknader och ska fortsätta att rullas ut automatiskt under de komm",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Fem av McLarens F1-bilar ska säljas",
+      "url": "https://feber.se/bil/fem-av-mclarens-f1-bilar-ska-saljas/497801/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 19:00:00 GMT",
+      "description": "Slå till! Den brittiska bilförsäljaren Tom Hartley Jnr har fått i uppdrag av McLaren att hjälpa till med försäljningen av fem F1-bilar. Inte den gamla modellen F1 utan bilar som tävlat i Formel 1. Bilarna har stått utställda på högkvarteret i Storbritannien men nu ska de alltså b",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Dömd pappa åtalas igen – hotade dottern efter vittnesmål om hedersvåld",
+      "url": "https://www.svt.se/nyheter/lokalt/jonkoping/domd-pappa-atalas-igen-hotade-dottern-efter-vittnesmal-om-hedersvald",
+      "published": "Tue, 27 Oct 2026 19:30:02 +0100",
+      "description": "En man i 40-årsåldern från Höglandet åtalas för att ha skickat ett meddelande till sin 16-åriga dotter efter att hon vittnat mot honom och andra familjemedlemmar i ett hedersrelaterat misshandelsmål i Eksjö tingsrätt i somras.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Apple uppdaterar Creator Studio",
+      "url": "https://feber.se/mac/apple-uppdaterar-creator-studio/497828/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 18:30:00 GMT",
+      "description": "Bygger in MotionVFX och öppnar för externa AI-agenter Apple ska rulla ut en större uppdatering av sin Creator Studio-svit för Mac, iPad och iPhone. Den kanske tyngsta nyheten för videofolket är att Final Cut Pro för Mac nu får MotionVFX direkt inbyggt. Det innebär tusentals effek",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "120 år sedan Rolls-Royce lanserade Silver Ghost",
+      "url": "https://feber.se/bil/120-ar-sedan-rolls-royce-lanserade-silver-ghost/497795/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 18:15:00 GMT",
+      "description": "Satte standarden 1906 lanserade Rolls-Royce modellen Silver Ghost vilket alltså nu är hela 120 år sedan. Rolls döpte den dock inte till det utan till 40/50 H.P, Silver Ghost är bara smeknamnet som världen har gett bilen. När den kom ville man bygga världens bästa bil och under Lo",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Fujifilm lanserar Instax Mini Evo 2",
+      "url": "https://feber.se/pryl/fujifilm-lanserar-instax-mini-evo-2/497825/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 18:00:00 GMT",
+      "description": "Hybridkamera med större skärm och video Fujifilm har presenterat sin senaste hybridkamera, Instax Mini Evo 2, som tar ett steg närmare en traditionell digitalkamera. Modellen bjuder på flera uppgraderingar som en större bildsensor (1/2,77 tum) och en 4,5 tum stor LCD-pekskärm som",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Testpilot: Samsung P9 – blixtsnabb lagring med USB4",
+      "url": "https://www.sweclockers.com/artikel/43329-testpilot-samsung-p9-blixtsnabb-lagring-med-usb4",
+      "published": "Tue, 27 Oct 2026 19:00:00 +0100",
+      "description": "Testpiloten Björn Endre tar en närmare titt på Samsungs portabla SSD med USB4.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "”Vet fortfarande inte vad Studentlistans politik kommer vara”",
+      "url": "https://www.svt.se/nyheter/utrikes/vet-fortfarande-inte-vad-studentlistans-politik-kommer-vara",
+      "published": "Tue, 27 Oct 2026 18:55:05 +0100",
+      "description": "Efter den historiska valsegern i Serbien ställs nu proteströrelsen Studentlistan inför nästa utmaning: Vem ska leda det icke-hierarkiska partiet – och i vilken riktning? – De har en hel del att ta tag i, säger SVT:s Europakorrespondent Niklas Svensson i Aktuellt.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Är bacon- och grillchips rökta?",
+      "url": "https://tjock.se/strupen/ar-bacon--och-grillchips-rokta/497836/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 17:50:00 GMT",
+      "description": "Köttnamn på vegetariska produkter förbjuds I maj i år beslutade man inom EU att livsmedel utan kött i sig inte skulle få ha köttrelaterade namn. 31 köttrelaterade benämningar finns med på förbudslistan - bland annat revbensspjäll, kyckling, kycklingvinge, nötkött, biff och bacon.",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Sista trailern för Dune Part Three har släppts",
+      "url": "https://feber.se/film/sista-trailern-for-dune-part-three-har-slappts/497838/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 17:40:00 GMT",
+      "description": "Mindre än två månader kvar nu Warner Bros. bjuder här på den sista trailern för Dune: Part Three. Filmen baseras på boken Ökenplanetens Messias och utspelar sig tolv år efter händelserna i den förra filmen. Paul Atreides har nu blivit kejsare, men hans styre hotas av konspiration",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Nederländerna bojkottar Eurovision – igen",
+      "url": "https://feber.se/samhalle/nederlanderna-bojkottar-eurovision--igen/497824/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 17:30:00 GMT",
+      "description": "Kommer inte medverka trots allt I augusti skrev vi om att Nederländerna bojkottar Eurovision, sedan bestämde man sig någon gång i september att man ändå skulle delta. Men nu meddelar nederländska public service-organisationen NPO att de gör en kovändning och meddelar att landet t",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Resan mot öppningen av E4 Förbifart Stockholms norra del",
+      "url": "https://feber.se/samhalle/resan-mot-oppningen-av-e4-forbifart-stockholms-norra-del/497833/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 17:00:00 GMT",
+      "description": "Snart igång Den 6 december kommer E4 Förbifart Stockholm mellan Hjulsta och Häggvik att öppna. Den nya vägen avlastar de omkringliggande vägarna och kommer att bli ett rejält lyft för den som ofta reser till och från norra Stockholm. I det här färska klippet från Trafikverket får",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Instagram utmanar YouTube",
+      "url": "https://feber.se/internet/instagram-utmanar-youtube/497819/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 16:30:00 GMT",
+      "description": "Börjar testa upp till 90 minuter långa videor Instagram testar något nytt med ett nytt videoformat som man kallar Features, som låter användare ladda upp videor på upp till 90 minuter. Målet är att på allvar kunna utmana YouTubes dominans kring intäktsmodeller, eftersom plattform",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Nya SD-styret i Oskarshamn vill stoppa Prideflaggan vid kommunhuset",
+      "url": "https://www.svt.se/nyheter/lokalt/smaland/nya-sd-styret-i-oskarshamn-vill-stoppa-prideflaggan-vid-kommunhuset",
+      "published": "Tue, 27 Oct 2026 17:11:50 +0100",
+      "description": "Som en del av uppgörelsen inom det nya styret i Oskarshamn kommer kommunen se över sin flaggpolicy. Något som kan innebära ett stopp för att hissa Prideflaggan vid stadshuset. – Just vid kommunens fastigheter ska man ha symboler som alla kan känna sig inkluderade i, säger Ted Nyb",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "USA ger Bolsonaro och hans familj visum",
+      "url": "https://www.svt.se/nyheter/utrikes/flavio-bolsonaros-pass-indraget-efter-valforlusten",
+      "published": "Tue, 27 Oct 2026 17:02:17 +0100",
+      "description": "Den brasilianske högerpolitikern Flávio Bolsonaro och hans familj har landat i USA, uppger källor till BBC. Där kommer de också att få visum utfärdade till sig. Det uppger en högt uppsatt tjänsteman vid det amerikanska utrikesdepartementet, enligt Reuters.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Ministry tackar för sig",
+      "url": "https://tjock.se/sinnet/ministry-tackar-for-sig/497818/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 16:00:00 GMT",
+      "description": "Kommer till Stockholm en sista gång i vår Efter drygt 45 år går industrirockbandet Ministry i graven nästa år. Grundaren och den sista originalmedlemmen Al Jourgensen meddelade nämligen nyligen att det är dags att sätta punkt för karriären. Bandet, som bildades 1981, släpper sitt",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Harry Kane är världens bästa fotbollsspelare",
+      "url": "https://feber.se/samhalle/harry-kane-ar-varldens-basta-fotbollsspelare/497814/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 15:30:00 GMT",
+      "description": "Vann årets Ballon d'Or Harry Kane vinner i år fotbollsvärldens mest prestigefyllda individuella pris, Ballon d'Or, efter ännu en stark säsong med mängder av mål för både Bayern München och det engelska landslaget. Han vinner därmed över andra favoriter som Lamine Yamal och Kylian",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Östgötapolitiker på Nordiska rådets möte: ”Otroligt viktigt”",
+      "url": "https://www.svt.se/nyheter/lokalt/ost/ostgotapolitiker-pa-nordiska-radets-mote-otroligt-viktigt",
+      "published": "Tue, 27 Oct 2026 16:17:35 +0100",
+      "description": "Samtidigt som Nordiska rådets årliga session pågår i Helsingfors, har ett uppmärksammat telefonsamtal väckt reaktioner. SVT Nyheter Öst är på plats och har träffat två östgötska riksdagsledamöter.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Batman gör goda gärningar i London",
+      "url": "https://feber.se/video/batman-gor-goda-garningar-i-london/497810/?utm_source=rss&utm_medium=feed",
+      "published": "Tue, 27 Oct 2026 15:00:00 GMT",
+      "description": "Men vem döljer sig bakom masken? En person utklädd till Batman går runt på gatorna i London och gör goda gärningar. Han har exempelvis betalat bränslet för massa folk som skulle tanka, delat ut gratis paraply när det regnat, städat gatorna och lagat potthål i marken. Det är tufft",
+      "sourceId": "feber",
+      "sourceName": "Feber"
+    },
+    {
+      "title": "Community Challenge: Flytta data!",
+      "url": "https://www.sweclockers.com/artikel/43340-community-challenge-flytta-data",
+      "published": "Tue, 27 Oct 2026 16:00:00 +0100",
+      "description": "Somliga optimerar för redundans, men ingen minns en fegis. Hur snabbt flyttar du data?",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Sotaren Petronella uppsagd med omedelbar verkan: ”Jag är förbannad”",
+      "url": "https://www.svt.se/nyheter/lokalt/jonkoping/sotaren-petronella-uppsagd-med-omedelbar-verkan-jag-ar-forbannad",
+      "published": "Tue, 27 Oct 2026 15:57:25 +0100",
+      "description": "Petronella von Wowern bytte bana till sotare och hittade ett yrke hon älskade. Nu har hon sagts upp med omedelbar verkan från sin provanställning i Gislaved, och riktar skarp kritik mot vad hon menar är en ökande stress för sotare som kan hota brandsäkerheten. – Jag känner mig up",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Efter SVT:s granskning av spelbyn i Nordingrå – skarp kritik mot ansvariga i Kramfors",
+      "url": "https://www.svt.se/nyheter/lokalt/vasternorrland/efter-svts-granskning-av-spelbyn-i-nordingra-skarp-kritik-mot-ansvariga-i-kramfors",
+      "published": "Tue, 27 Oct 2026 14:42:37 +0100",
+      "description": "Ansvariga politiker och tjänstemän i Kramfors kommun får svidande kritik för brister i hanteringen kring satsningen på en spelby i Nordingrå. Det visar den oberoende, externa utredning som kommunen beställt efter SVT:s avslöjande om brister.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Advanced Shader Delivery kommer till Unreal Engine",
+      "url": "https://www.sweclockers.com/artikel/43337-advanced-shader-delivery-kommer-till-unreal-engine",
+      "published": "Tue, 27 Oct 2026 14:00:00 +0100",
+      "description": "Med 5.8 tar den frekvent syndande spelmotorn steg mot att sona för sina FPS-(av)brott.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Poliser gjorde provköp på thaimassagesalonger – nu döms ägarna",
+      "url": "https://www.svt.se/nyheter/lokalt/jonkoping/poliser-gjorde-provkop-pa-thaimassagesalonger-nu-doms-agarna",
+      "published": "Tue, 27 Oct 2026 13:40:25 +0100",
+      "description": "Nio män döms för att ha köpt sex på thaimassagesalonger i bland annat Huskvarna, Motala och Halmstad. Mannen som ägde salongerna döms till två och ett halvt års fängelse för grovt koppleri. Hans flickvän, en kvinna i 45-årsåldern döms till 8 månaders fängelse och utvisning i fem ",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Person hittad död i Ockelbo – polisen utreder mord",
+      "url": "https://www.svt.se/nyheter/lokalt/gavleborg/person-hittad-dod-i-ockelbo",
+      "published": "Tue, 27 Oct 2026 12:54:31 +0100",
+      "description": "En man i 70-årsåldern har hittats avliden i en bostad i Ockelbo under måndagen. En förundersökning gällande mord har inletts och en kvinna är anhållen på sannolika skäl.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Microsoft köper ut var fjärde och satsar på AI",
+      "url": "https://www.sweclockers.com/artikel/43339-microsoft-koper-ut-var-fjarde-och-satsar-pa-ai",
+      "published": "Tue, 27 Oct 2026 12:06:46 +0100",
+      "description": "Xbox och Windows ingår när Microsoft ställer om för AI, vilket kan märkas i produkterna.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Två män döms – drev amfetaminlabb utanför Helsingborg",
+      "url": "https://www.svt.se/nyheter/lokalt/helsingborg/tva-man-doms-drev-amfetaminlabb-utanfor-helsingborg",
+      "published": "Tue, 27 Oct 2026 12:00:33 +0100",
+      "description": "I december förra året upptäckte en mäklare ett amfetaminlabb när han skulle visa en obebodd gård utanför Helsingborg. Nu döms två män till fängelse och utvisning för att ha tillverkat cirka 20 kilo amfetamin i labbet.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Jokkmokk tar tillbaka petad kommunchef – fråntas ansvar",
+      "url": "https://www.svt.se/nyheter/lokalt/norrbotten/jokkmokk-tar-tillbaka-petad-kommunchef-frantas-ansvar",
+      "published": "Tue, 27 Oct 2026 11:35:56 +0100",
+      "description": "Jokkmokks kommunchef Lars Eriksson blir kvar med titeln kommunchef, men utan ansvar för personal, ekonomi och budget. I stället föreslås han arbeta med bland annat utredningar om näringslivsutveckling och industrimark. – Det är kopplat till förtroendet hos politiken och kanske i ",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Två män häktade efter misstänkt mordbrand mot bilfirma i Uddevalla",
+      "url": "https://www.svt.se/nyheter/lokalt/vast/tva-man-haktade-efter-misstankt-mordbrand-mot-bilfirma-i-uddevalla",
+      "published": "Tue, 27 Oct 2026 11:15:30 +0100",
+      "description": "Knappt två veckor efter branden mot en bilfirma i Uddevalla har nu två misstänkta män häktats. Männen är i 25- respektive 35-årsåldern, varav den ena sedan tidigare är dömd för brott.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Expert: Rasistiskt språk från politiker flyttar gränser",
+      "url": "https://www.svt.se/nyheter/uutiset/svenska/expert-rasistiskt-sprak-fran-politiker-flyttar-granser",
+      "published": "Tue, 27 Oct 2026 11:14:39 +0100",
+      "description": "När rasistiska uttalanden får fäste i offentligheten påverkas också vardagen – för en del unga har rasism blivit något återkommande, säger Shadia Rask, befolkningsforskare och utbildare inom likabehandling.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "I Finland uppmärksammar och ingriper unga oftare mot rasism än äldre",
+      "url": "https://www.svt.se/nyheter/uutiset/svenska/i-finland-uppmarksammar-och-ingriper-unga-oftare-mot-rasism-an-aldre",
+      "published": "Tue, 27 Oct 2026 11:14:23 +0100",
+      "description": "Unga i Finland uppmärksammar och ingriper mot rasism oftare än äldre generationer. Det framgår av en enkätundersökning som beställts av Röda Korset i Finland.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Forskare: Bilden av Finland som mer rasistiskt än Sverige bygger på rasistisk logik",
+      "url": "https://www.svt.se/nyheter/uutiset/svenska/forskare-bilden-av-finland-som-mer-rasistiskt-an-sverige-bygger-pa-rasistisk-logik",
+      "published": "Tue, 27 Oct 2026 11:14:08 +0100",
+      "description": "De senaste årens uppmärksammade rasismkontroverser i Finland har väckt reaktioner även utomlands – inte minst i Sverige. Men bilden av Finland som ett särskilt rasistiskt land riskerar att skymma rasismen på hemmaplan, menar forskaren Katrina Hirvonen.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Döda flugpuppor bland pommesen på restaurang som frontas av Tiktok-profilen Megic Mike",
+      "url": "https://www.svt.se/nyheter/lokalt/skane/doda-flugpuppor-bland-pommesen-pa-restaurang-som-frontas-av-tiktok-profilen-megic-mike",
+      "published": "Tue, 27 Oct 2026 10:46:34 +0100",
+      "description": "Den nyöppnade restaurangen Megic Streetfood stoppas från att servera 100 kilo pommes frites på restaurangen i Malmö. Detta efter att kommunen upptäckt döda flugpuppor bland pommesen.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Man fejkvabbade över 200 dagar – fick hundra tusen kronor av Försäkringskassan",
+      "url": "https://www.svt.se/nyheter/lokalt/vasterbotten/man-fejkvabbade-over-200-dagar-fick-hundra-tusen-kronor-av-forsakringskassan",
+      "published": "Tue, 27 Oct 2026 10:36:48 +0100",
+      "description": "En man i 50-årsåldern från Skellefteå kommun har ”fejkvabbat” mer än 200 dagar under ett års tid – och fått drygt hundratusen kronor i ersättning från Försäkringskassan. Nu döms han för vårdslöst bidragsbrott.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Förskoleanställd i Vänersborg misstänkt för grovt sexualbrott mot barn",
+      "url": "https://www.svt.se/nyheter/lokalt/vast/forskoleanstalld-i-vanersborg-misstankt-for-grovt-sexbrott-mot-barn",
+      "published": "Tue, 27 Oct 2026 10:06:31 +0100",
+      "description": "En förskoleanställd har häktats misstänkt för grovt sexuellt övergrepp mot barn på den förskola han jobbar på i Vänersborgs kommun, rapporterar TTELA .",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Playden kör Steam-spel på upplåst Playstation 5",
+      "url": "https://www.sweclockers.com/artikel/43335-playden-kor-steam-spel-pa-upplast-playstation-5",
+      "published": "Tue, 27 Oct 2026 10:00:00 +0100",
+      "description": "Förvandlar spelkonsolen till ett slags Steam Machine.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Nytt besked om åtal efter mordet i Rönninge: Utredningen i slutfasen",
+      "url": "https://www.svt.se/nyheter/lokalt/sodertalje/nytt-besked-om-atal-efter-mordet-i-ronninge-utredningen-i-slutfasen",
+      "published": "Tue, 27 Oct 2026 08:31:44 +0100",
+      "description": "Åtalet mot den 26-årige man som misstänks för mordet på My i Rönninge skjuts upp igen. Åklagaren har begärt förlängd åtalstid till den 24 november.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Nyhet i x86-arkitekturen på Nova Lake gör Windows snabbare",
+      "url": "https://www.sweclockers.com/artikel/43334-nyhet-i-x86-arkitekturen-pa-nova-lake-gor-windows-snabbare",
+      "published": "Tue, 27 Oct 2026 06:00:00 +0100",
+      "description": "Microsoft har lagt till en ny inställning för att aktivera funktionen.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Här hålls böner för Mohamed Ali (V) – i Nairobi",
+      "url": "https://www.svt.se/nyheter/utrikes/har-halls-boner-for-mohamed-ali-v-i-nairobi",
+      "published": "Tue, 27 Oct 2026 05:58:33 +0100",
+      "description": "Samma vecka som polisen slog till mot flera adresser i Borlänge hölls böner för Mohamed Ali – i den kenyanska huvudstaden Nairobi. För SVT berättar släktingar om V-ledamotens starka band till Kenya. – Han är en mycket viktig person inom gruppen, säger en av dem.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Christin och Erika förlorade sina barn – nu hjälper de andra i sorgen",
+      "url": "https://www.svt.se/nyheter/lokalt/vasternorrland/christin-och-erika-forlorade-sina-barn-nu-hjalper-de-andra-i-sorgen",
+      "published": "Tue, 27 Oct 2026 05:30:05 +0100",
+      "description": "Prästerna Christin och Erika har båda drabbats av det värsta en förälder kan uppleva, att förlora ett barn. Nu bjuder de in till en minnesstund i Birgittakyrkan i Skönsberg. – Det är en sorg och en saknad som aldrig släpper, säger Christin Bostedt.",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "Nytt nordiskt samarbete ska säkra blod vid kris och krig",
+      "url": "https://www.svt.se/nyheter/lokalt/norrbotten/nytt-nordisk-samarbete-ska-ge-battre-tillgang-till-blod",
+      "published": "Tue, 27 Oct 2026 05:30:05 +0100",
+      "description": "Ett nytt samarbete mellan norra Sverige, Norge och Finland ska se till att blod alltid finns tillgängligt i nödlägen, som vid kris eller krig. – Projektet är en av de mest prioriterade beredskapsplaneringen som pågår här uppe just nu, säger Henrik Brännholm, beredskapsöverläkare ",
+      "sourceId": "svt",
+      "sourceName": "SVT Nyheter"
+    },
+    {
+      "title": "POST S01E41: Begagnat-fails och oväntade fynd",
+      "url": "https://www.sweclockers.com/artikel/43336-post-s01e41-begagnat-fails-och-ovantade-fynd",
+      "published": "Mon, 26 Oct 2026 19:00:00 +0100",
+      "description": "André och Fredrik grottar ner sig i medlemmarnas begagnatköp. Vissa överträffar alla förväntningar, andra blir dyra läropengar.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Asus släpper påkostad gaming-NUC",
+      "url": "https://www.sweclockers.com/artikel/43333-asus-slapper-pakostad-gaming-nuc",
+      "published": "Mon, 26 Oct 2026 14:45:52 +0100",
+      "description": "Phantom Blade Zero-design och en prislapp som börjar på över 36 000 kronor.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Snabbkoll: Har du testat en handhållen speldator?",
+      "url": "https://www.sweclockers.com/artikel/43332-snabbkoll-har-du-testat-en-handhallen-speldator",
+      "published": "Mon, 26 Oct 2026 12:00:00 +0100",
+      "description": "Steam Deck och Rog Ally har gjort PC-spel i soffan till vardag. Har du själv testat en?",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Grattis på födelsedagen, Windows XP!",
+      "url": "https://www.sweclockers.com/artikel/43331-grattis-pa-fodelsedagen-windows-xp",
+      "published": "Mon, 26 Oct 2026 10:51:19 +0100",
+      "description": "Kärt barn har många namn, sägs det, men räcker det ändå inte med \"Windows XP\"?",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Verktyg låser upp AI-prestanda på äldre Geforce-kort",
+      "url": "https://www.sweclockers.com/artikel/43330-verktyg-laser-upp-ai-prestanda-pa-aldre-geforce-kort",
+      "published": "Mon, 26 Oct 2026 08:31:13 +0100",
+      "description": "Bryter Nvidias lås på flyttalsoperationer på RTX 30-serien.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Zen 6 uppåt 25 procent snabbare per MHz",
+      "url": "https://www.sweclockers.com/artikel/43328-zen-6-uppat-25-procent-snabbare-per-mhz",
+      "published": "Sun, 25 Oct 2026 09:00:00 +0100",
+      "description": "Testresultat för AMD:s första processorer baserade på den nya arkitekturen är lovande.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Uppgraderingsdags? Så stor är skillnaden mellan RTX 5080 och 3080 i Control Resonant",
+      "url": "https://www.sweclockers.com/artikel/43322-uppgraderingsdags-sa-stor-ar-skillnaden-mellan-rtx-5080-och-3080-i-control-resonant",
+      "published": "Sat, 24 Oct 2026 13:00:00 +0200",
+      "description": "Båda grafikkorten uppfyller systemkraven, men hur mycket bättre blir egentligen spelupplevensen med RTX 5080?",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "RTX Remix 1.6 får DLSS 5 och stöd för Minecraft Java",
+      "url": "https://www.sweclockers.com/artikel/43327-rtx-remix-1-6-far-dlss-5-och-stod-for-minecraft-java",
+      "published": "Sat, 24 Oct 2026 09:00:00 +0200",
+      "description": "Nvidia har släppt en rejäl uppdatering av sitt moddningsverktyg.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Spotify jagar familjedelare med QR-koder",
+      "url": "https://www.sweclockers.com/artikel/43325-spotify-jagar-familjedelare-med-qr-koder",
+      "published": "Fri, 23 Oct 2026 16:39:28 +0200",
+      "description": "Bor du inte med den som betalar kan Spotify stänga ute dig från familjeplanerna i ett år.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "ShowCase: Uppskruvade grafikinställningar med Aorus Geforce RTX 5080 Infinity",
+      "url": "https://www.sweclockers.com/artikel/43320-showcase-uppskruvade-grafikinstallningar-med-aorus-geforce-rtx-5080-infinity",
+      "published": "Fri, 23 Oct 2026 15:06:10 +0200",
+      "description": "Annorlunda design, hökvingekylning och Nvidias senaste grafiktekniker. Steven Erixon bjuder på grafikkortsgenomgång.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Tävling: Har du Sveriges nördigaste NAS?",
+      "url": "https://www.sweclockers.com/artikel/43235-tavling-har-du-sveriges-nordigaste-nas",
+      "published": "Fri, 23 Oct 2026 12:00:00 +0200",
+      "description": "Visa upp din unika serverlösning i forumtråden och tävla om fina priser från Seagate.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Galax släpper RTX 5080 med dubbla 12V‑2x6-kontakter",
+      "url": "https://www.sweclockers.com/artikel/43324-galax-slapper-rtx-5080-med-dubbla-12v-2x6-kontakter",
+      "published": "Fri, 23 Oct 2026 10:00:00 +0200",
+      "description": "5080 HOF Extreme är 25 procent dyrare än riktpriset på RTX 5090.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Hackintosh lever – på Snapdragon X2 Elite",
+      "url": "https://www.sweclockers.com/artikel/43323-hackintosh-lever-pa-snapdragon-x2-elite",
+      "published": "Fri, 23 Oct 2026 06:00:00 +0200",
+      "description": "Utvecklare får igång Mac OS på Asus Zenbook A16, med fungerande grafikacceleration.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "MSI Claw 8 EX AI+ och Acer Predator Atlas 8: Sylvassa titaner",
+      "url": "https://www.sweclockers.com/artikel/43254-msi-claw-8-ex-ai-och-acer-predator-atlas-8-sylvassa-titaner",
+      "published": "Thu, 22 Oct 2026 18:00:00 +0200",
+      "description": "Men de handhållna enheterna fjättras fortfarande av ett undermåligt operativsystem.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "AI hjälpte avslöja decennier gamla hål i PHP",
+      "url": "https://www.sweclockers.com/artikel/43321-ai-hjalpte-avsloja-decennier-gamla-hal-i-php",
+      "published": "Thu, 22 Oct 2026 16:40:42 +0200",
+      "description": "Med AI i ryggen har forskare hittat allvarliga hål i PHP. Uppdateringar finns redan.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Quiz: Hur väl minns du de anrika PC-rollspelen?",
+      "url": "https://www.sweclockers.com/artikel/43319-quiz-hur-val-minns-du-de-anrika-pc-rollspelen",
+      "published": "Thu, 22 Oct 2026 14:01:31 +0200",
+      "description": "Bioware stänger efter drygt 30 år. Hur bra koll har du på rollspelen som formade genren?",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "AMD tar överklockning till Linux",
+      "url": "https://www.sweclockers.com/artikel/43318-amd-tar-overklockning-till-linux",
+      "published": "Thu, 22 Oct 2026 12:00:00 +0200",
+      "description": "Möjliggör ändrande av Ryzen-processorers effekt- och strömgränser direkt från operativsystemet.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "AI-kod gör smart-TV dum",
+      "url": "https://www.sweclockers.com/artikel/43315-ai-kod-gor-smart-tv-dum",
+      "published": "Thu, 22 Oct 2026 10:00:00 +0200",
+      "description": "Med hjälp av vibe coding går användare till attack mot TV-apparater med reklam och spårning.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "TLS-certifikat komprometterade – ”värre än Heartbleed”",
+      "url": "https://www.sweclockers.com/artikel/43314-tls-certifikat-komprometterade-varre-an-heartbleed",
+      "published": "Thu, 22 Oct 2026 06:00:00 +0200",
+      "description": "Kan dröja flera år innan alla drabbade enheter har säkrats.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Community Challenge: Kung av Kabelkaos",
+      "url": "https://www.sweclockers.com/artikel/43317-community-challenge-kung-av-kabelkaos",
+      "published": "Wed, 21 Oct 2026 19:00:00 +0200",
+      "description": "Vissa säger att insidan räknas, men du menar på att det som inte syns ej heller räknas.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "RTX-ägare slipper vänta på shaders",
+      "url": "https://www.sweclockers.com/artikel/43316-rtx-agare-slipper-vanta-pa-shaders",
+      "published": "Wed, 21 Oct 2026 18:00:00 +0200",
+      "description": "Ny Geforce-drivrutin hämtar färdiga shaders från molnet, så spelet startar direkt.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Veckans fråga: Hur mycket betalar du för internet?",
+      "url": "https://www.sweclockers.com/artikel/43313-veckans-fraga-hur-mycket-betalar-du-for-internet",
+      "published": "Wed, 21 Oct 2026 12:00:00 +0200",
+      "description": "Bostadsrätten bjuder på gigabit medan villan punktar upp 600 kr. Var hamnar din uppkoppling hemma i månaden?",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "AMD satsar på ARM-baserade systemkretsar",
+      "url": "https://www.sweclockers.com/artikel/43312-amd-satsar-pa-arm-baserade-systemkretsar",
+      "published": "Wed, 21 Oct 2026 10:00:00 +0200",
+      "description": "Kallas Soundwave och ska sitta i kommande Microsoft Surface-modeller.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Potentiell Steam Deck 2-processor dyker upp i test",
+      "url": "https://www.sweclockers.com/artikel/43311-potentiell-steam-deck-2-processor-dyker-upp-i-test",
+      "published": "Wed, 21 Oct 2026 06:00:00 +0200",
+      "description": "Testexemplar av kretsen i ”Gainsborough”-familjen visar vad som kan vänta.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "RTX 6060 kan dröja ända till 2029",
+      "url": "https://www.sweclockers.com/artikel/43310-rtx-6060-kan-droja-anda-till-2029",
+      "published": "Tue, 20 Oct 2026 16:32:03 +0200",
+      "description": "Nvidias nästa instegskort kan dröja till 2029, nästan fyra år efter RTX 5060.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Lokal AI Del 2: Företagshemlisar och praktikantjobb",
+      "url": "https://www.sweclockers.com/artikel/43286-lokal-ai-del-2-foretagshemlisar-och-praktikantjobb",
+      "published": "Tue, 20 Oct 2026 10:00:00 +0200",
+      "description": "Det har blivit dags att integrera AI i arbetsflödet. Produktivitet goes brrrr?",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Sonys nya bildrute­generering använder handkontrollen",
+      "url": "https://www.sweclockers.com/artikel/43309-sonys-nya-bildrute-generering-anvander-handkontrollen",
+      "published": "Tue, 20 Oct 2026 09:00:00 +0200",
+      "description": "Spelarens fysiska rörelser fungerar som inmatning för att förutse nästa bildruta.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Överklockare slår 12 år gammalt rekord",
+      "url": "https://www.sweclockers.com/artikel/43308-overklockare-slar-12-ar-gammalt-rekord",
+      "published": "Tue, 20 Oct 2026 06:00:00 +0200",
+      "description": "Core i5-4670K är ingen nykomling på överklockningsscenen direkt.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "POST S01E40: Hypen vi inte fattar",
+      "url": "https://www.sweclockers.com/artikel/43307-post-s01e40-hypen-vi-inte-fattar",
+      "published": "Mon, 19 Oct 2026 19:00:35 +0200",
+      "description": "André och Fredrik tar sig an teknikhyperna medlemmarna inte fattar, från AI-kylskåp till skärmar på 1000 Hz.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    },
+    {
+      "title": "Samsungs P7 och P9 minskar överföringstiden – med USB4-hastighet",
+      "url": "https://www.sweclockers.com/artikel/43291-samsungs-p7-och-p9-minskar-overforingstiden-med-usb4-hastighet",
+      "published": "Mon, 19 Oct 2026 16:00:00 +0200",
+      "description": "Samsungs nya SSD:er förkortar väntetiden dramatiskt när stora filer överförs från datorn.",
+      "sourceId": "sweclockers",
+      "sourceName": "SweClockers"
+    }
+  ],
+  "errors": []
+}

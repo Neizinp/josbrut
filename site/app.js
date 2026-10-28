@@ -43,10 +43,12 @@ function renderSources() {
   sourceNav.querySelectorAll(".source-filter[data-source]").forEach((label) => label.remove());
 
   sources.forEach((source) => {
-    const label = document.createElement("label");
-    label.className = "source-filter";
-    label.htmlFor = `source-${source.id}`;
-    label.dataset.source = source.id;
+    const row = document.createElement("div");
+    row.className = "source-filter";
+    row.dataset.source = source.id;
+    const choice = document.createElement("label");
+    choice.className = "source-choice";
+    choice.htmlFor = `source-${source.id}`;
     const checkbox = document.createElement("input");
     checkbox.id = `source-${source.id}`;
     checkbox.type = "checkbox";
@@ -56,8 +58,19 @@ function renderSources() {
     count.textContent = String(counts[source.id] || 0);
     const sourceLabel = document.createElement("span");
     sourceLabel.textContent = source.name;
-    label.append(checkbox, sourceLabel, count);
-    sourceNav.append(label);
+    choice.append(checkbox, sourceLabel, count);
+
+    const soloButton = document.createElement("button");
+    soloButton.className = "source-solo";
+    soloButton.type = "button";
+    soloButton.dataset.soloSource = source.id;
+    soloButton.title = `Visa bara ${source.name}`;
+    soloButton.setAttribute("aria-label", `Visa bara ${source.name}`);
+    soloButton.setAttribute("aria-pressed", String(selectedSources.size === 1 && selectedSources.has(source.id)));
+    soloButton.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/><path d="M12 1v3M23 12h-3M12 23v-3M1 12h3"/></svg>';
+
+    row.append(choice, soloButton);
+    sourceNav.append(row);
   });
 
   const allCheckbox = document.querySelector("#source-all");
@@ -68,6 +81,8 @@ function renderSources() {
   allCheckbox.closest(".source-filter").classList.toggle("is-partial", allCheckbox.indeterminate);
   sourceNav.querySelectorAll(".source-filter[data-source]").forEach((label) => {
     label.classList.toggle("is-active", selectedSources.has(label.dataset.source));
+    const soloButton = label.querySelector(".source-solo");
+    soloButton.setAttribute("aria-pressed", String(selectedSources.size === 1 && selectedSources.has(label.dataset.source)));
   });
 }
 
@@ -183,6 +198,13 @@ sourceNav.addEventListener("change", (event) => {
     if (checkbox.checked) selectedSources.add(sourceId);
     else selectedSources.delete(sourceId);
   }
+  renderArticles();
+});
+sourceNav.addEventListener("click", (event) => {
+  const soloButton = event.target.closest(".source-solo");
+  if (!soloButton) return;
+  selectedSources.clear();
+  selectedSources.add(soloButton.dataset.soloSource);
   renderArticles();
 });
 searchInput.addEventListener("input", renderArticles);

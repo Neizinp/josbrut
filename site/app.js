@@ -18,6 +18,13 @@ let sources = FALLBACK_SOURCES;
 let articles = [];
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+const DUPLICATE_WINDOW_MS = 24 * 60 * 60 * 1000;
+const TITLE_STOP_WORDS = new Set([
+  "alla", "att", "av", "blev", "blir", "bra", "dag", "den", "denna", "deras", "det", "efter", "eller",
+  "en", "ett", "flera", "från", "för", "har", "hela", "här", "i", "inte", "kan", "kommer", "kräver",
+  "med", "men", "minst", "mot", "mycket", "när", "och", "om", "på", "samt", "sedan", "sin", "sitt", "ska", "som",
+  "stor", "stora", "svensk", "sverige", "till", "under", "uppger", "vid", "vi", "över",
+]);
 
 function safeDate(value) {
   if (!value) return null;
@@ -34,6 +41,42 @@ function ageLabel(value) {
   const hours = Math.floor(minutes / 60);
   if (hours < 24) return `${hours} TIM`;
   return `${Math.floor(hours / 24)} DAG`;
+}
+
+function titleWords(title) {
+  return new Set(
+    title.toLocaleLowerCase("sv")
+      .normalize("NFC")
+      .match(/[\p{L}\p{N}]+/gu)
+      ?.filter((word) => (word.length > 2 || /^\d{2,}$/.test(word)) && !TITLE_STOP_WORDS.has(word)) || [],
+  );
+}
+
+function isDuplicateHeadline(first, second) {
+  const firstTime = safeDate(first.published)?.getTime();
+  const secondTime = safeDate(second.published)?.getTime();
+  if (firstTime === undefined || secondTime === undefined || Math.abs(firstTime - secondTime) > DUPLICATE_WINDOW_MS) return false;
+  if (first.url === second.url) return true;
+
+  const firstWords = titleWords(first.title);
+  const secondWords = titleWords(second.title);
+  if (Math.min(firstWords.size, secondWords.size) < 3) return false;
+  const sharedWords = [...firstWords].filter((word) => secondWords.has(word)).length;
+  const unionSize = new Set([...firstWords, ...secondWords]).size;
+  return sharedWords >= 3 && sharedWords / unionSize >= 0.38;
+}
+
+function groupDuplicateHeadlines(items) {
+  const groups = [];
+  for (const article of items) {
+    const group = groups.find((candidate) => {
+      if (candidate.articles.some((item) => item.sourceId === article.sourceId)) return false;
+      return candidate.articles.some((item) => isDuplicateHeadline(item, article));
+    });
+    if (group) group.articles.push(article);
+    else groups.push({ articles: [article] });
+  }
+  return groups;
 }
 
 function renderSources() {
@@ -93,13 +136,16 @@ function renderArticles() {
     const published = safeDate(article.published)?.getTime();
     const matchesAge = published !== undefined && published >= now - WEEK_MS && published <= now;
     const matchesSource = selectedSources.has(article.sourceId);
-    const matchesQuery = !query || `${article.title} ${article.description} ${article.sourceName}`.toLocaleLowerCase("sv").includes(query);
-    return matchesAge && matchesSource && matchesQuery;
+    return matchesAge && matchesSource;
   });
+  const groups = groupDuplicateHeadlines(filtered).filter((group) => !query || group.articles.some((article) =>
+    `${article.title} ${article.description} ${article.sourceName}`.toLocaleLowerCase("sv").includes(query),
+  ));
 
   articleList.replaceChildren();
   const fragment = document.createDocumentFragment();
-  filtered.forEach((article) => {
+  groups.forEach((group) => {
+    const [article, ...duplicates] = group.articles;
     const row = document.createElement("article");
     row.className = "article-row";
     const source = sources.find((item) => item.id === article.sourceId);
@@ -124,6 +170,23 @@ function renderArticles() {
       description.textContent = article.description;
       main.append(description);
     }
+    if (duplicates.length) {
+      const duplicateList = document.createElement("div");
+      duplicateList.className = "duplicate-sources";
+      const label = document.createElement("span");
+      label.textContent = "Även hos";
+      duplicateList.append(label);
+      duplicates.forEach((duplicate) => {
+        const duplicateLink = document.createElement("a");
+        duplicateLink.href = duplicate.url;
+        duplicateLink.target = "_blank";
+        duplicateLink.rel = "noopener noreferrer";
+        duplicateLink.textContent = duplicate.sourceName;
+        duplicateLink.setAttribute("aria-label", `Läs motsvarande rubrik hos ${duplicate.sourceName}`);
+        duplicateList.append(duplicateLink);
+      });
+      main.append(duplicateList);
+    }
     const time = document.createElement("time");
     time.className = "article-time";
     time.dateTime = safeDate(article.published)?.toISOString() || "";
@@ -133,8 +196,9 @@ function renderArticles() {
     fragment.append(row);
   });
   articleList.append(fragment);
-  emptyState.hidden = filtered.length !== 0;
-  resultsStatus.textContent = `${filtered.length} ${filtered.length === 1 ? "rubrik" : "rubriker"}`;
+  emptyState.hidden = groups.length !== 0;
+  const duplicateCount = groups.reduce((count, group) => count + group.articles.length - 1, 0);
+  resultsStatus.textContent = `${groups.length} ${groups.length === 1 ? "nyhet" : "nyheter"}${duplicateCount ? ` · ${duplicateCount} dubletter samlade` : ""}`;
   renderSources();
 }
 

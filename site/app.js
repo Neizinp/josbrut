@@ -175,9 +175,6 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-document.querySelector("#today-date").textContent = new Intl.DateTimeFormat("sv-SE", {
-  day: "numeric", month: "long", year: "numeric",
-}).format(new Date()).toLocaleUpperCase("sv-SE");
 renderSources();
 loadFeeds();
 window.setInterval(() => loadFeeds(), 5 * 60 * 1000);

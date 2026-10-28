@@ -15,7 +15,7 @@ body { margin: 0; color: var(--ink); font-family: var(--mono); font-size: 13px; 
 button, input { color: inherit; font: inherit; }
 button { cursor: pointer; }
 a { color: inherit; }
-.edition-line, .rail-heading, .live-label, .feed-footer { font-size: 10px; font-weight: 700; }
+.rail-heading, .live-label, .feed-footer { font-size: 10px; font-weight: 700; }
 .refresh-button { width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center; border: 1px solid var(--ink); background: transparent; }
 .refresh-button:hover { background: var(--acid); }
 .refresh-button svg, .search-box svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
@@ -32,12 +32,7 @@ a { color: inherit; }
 .source-count { color: var(--muted); font-size: 10px; }
 .rail-foot { margin-top: auto; border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 8px; color: var(--muted); font-size: 10px; }
 .live-label { color: #438d32; }
-.feed { min-width: 0; padding: 27px 0 0; }
-.edition-line { display: flex; justify-content: space-between; color: var(--muted); padding-bottom: 17px; border-bottom: 1px solid var(--ink); }
-.feed-heading { display: flex; justify-content: space-between; align-items: end; padding: 26px 0 27px; }
-h1 { margin: 0; font-family: var(--serif); font-size: clamp(48px, 7vw, 82px); line-height: .84; font-weight: 500; }
-h1 span { font-style: italic; }
-.intro { margin: 0 0 3px; color: var(--muted); font-family: var(--serif); font-size: 15px; line-height: 1.5; }
+.feed { min-width: 0; padding: 30px 0 0; }
 .toolbar { min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
 .search-box { display: flex; align-items: center; gap: 9px; flex: 1; max-width: 420px; }
 .search-box svg { flex: 0 0 auto; }
@@ -74,14 +69,8 @@ kbd { border: 1px solid var(--line); padding: 2px 6px; color: var(--muted); font
   .source-filter.is-active { border-color: var(--ink); }
   .rail-foot { display: none; }
   .feed { padding-top: 17px; }
-  .feed-heading { padding: 22px 0 21px; }
-  h1 { font-size: 56px; }
-  .intro { font-size: 13px; }
 }
 @media (max-width: 480px) {
-  .feed-heading { align-items: start; flex-direction: column; gap: 16px; }
-  h1 { font-size: 54px; }
-  .intro br { display: none; }
   .toolbar { gap: 9px; }
   .toolbar-status { font-size: 9px; }
   .article-row { grid-template-columns: minmax(0, 1fr) auto; gap: 5px 12px; padding: 14px 0; }

@@ -19,10 +19,10 @@ let articles = [];
 let feedUpdatedAt = "";
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
-const LIVE_REFRESH_MS = 15 * 60 * 1000;
-const LIVE_REFRESH_KEY = "nyheter-live-refresh-at-v2";
+const AUTO_REFRESH_MS = 15 * 60 * 1000;
 const LIVE_CACHE_KEY = "nyheter-live-feed-cache-v2";
 const FEED_PROXY = "https://r.jina.ai/";
+let liveRefreshInProgress = false;
 
 function safeDate(value) {
   if (!value) return null;
@@ -275,21 +275,13 @@ function loadLocalLiveCache() {
   }
 }
 
-async function refreshLiveFeeds({ fromButton = false } = {}) {
-  const lastRefresh = Number(localStorage.getItem(LIVE_REFRESH_KEY) || 0);
-  const remaining = LIVE_REFRESH_MS - (Date.now() - lastRefresh);
-  if (remaining > 0) {
-    if (fromButton) {
-      const minutes = Math.ceil(remaining / 60000);
-      showFeedState(`Nästa livehämtning är tillgänglig om ${minutes} min.`);
-    }
-    return;
-  }
+async function refreshLiveFeeds() {
+  if (liveRefreshInProgress) return;
+  liveRefreshInProgress = true;
 
   refreshButton.classList.add("is-loading");
   refreshButton.disabled = true;
   showFeedState("Hämtar senaste nyheterna från källorna …");
-  localStorage.setItem(LIVE_REFRESH_KEY, String(Date.now()));
 
   const previousArticles = articles;
   const results = await Promise.allSettled(sources.map(async (source) => {
@@ -348,6 +340,7 @@ async function refreshLiveFeeds({ fromButton = false } = {}) {
 
   refreshButton.classList.remove("is-loading");
   refreshButton.disabled = false;
+  liveRefreshInProgress = false;
 }
 
 sourceNav.addEventListener("change", (event) => {
@@ -371,7 +364,7 @@ sourceNav.addEventListener("click", (event) => {
   renderArticles();
 });
 searchInput.addEventListener("input", renderArticles);
-refreshButton.addEventListener("click", () => refreshLiveFeeds({ fromButton: true }));
+refreshButton.addEventListener("click", () => refreshLiveFeeds());
 document.addEventListener("keydown", (event) => {
   if (event.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
     event.preventDefault();
@@ -390,4 +383,4 @@ loadFeeds().then(() => {
   loadLocalLiveCache();
   return refreshLiveFeeds();
 });
-window.setInterval(() => refreshLiveFeeds(), 60 * 1000);
+window.setInterval(() => refreshLiveFeeds(), AUTO_REFRESH_MS);

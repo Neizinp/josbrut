@@ -16,7 +16,7 @@ body { margin: 0; color: var(--ink); font-family: var(--mono); font-size: 13px; 
 button, input { color: inherit; font: inherit; }
 button { cursor: pointer; }
 a { color: inherit; }
-.rail-heading, .live-label, .feed-footer { font-size: 10px; font-weight: 700; }
+.rail-heading, .feed-footer { font-size: 10px; font-weight: 700; }
 .refresh-button { width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center; border: 1px solid var(--ink); background: transparent; }
 .refresh-button:hover { background: var(--accent); }
 .refresh-button svg, .search-box svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
@@ -44,7 +44,6 @@ a { color: inherit; }
 .source-count { color: var(--muted); font-size: 10px; }
 .source-filter .source-count { margin-left: auto; }
 .rail-foot { margin-top: auto; border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 8px; color: var(--muted); font-size: 10px; }
-.live-label { color: #438d32; }
 .feed { min-width: 0; padding: 30px 0 0; }
 .toolbar { min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
 .search-box { display: flex; align-items: center; gap: 9px; flex: 1; max-width: 420px; }

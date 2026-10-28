@@ -19,7 +19,6 @@ let articles = [];
 let feedUpdatedAt = "";
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
-const AUTO_REFRESH_MS = 15 * 60 * 1000;
 const LIVE_CACHE_KEY = "nyheter-live-feed-cache-v2";
 const FEED_PROXY = "https://r.jina.ai/";
 let liveRefreshInProgress = false;
@@ -383,4 +382,3 @@ loadFeeds().then(() => {
   loadLocalLiveCache();
   return refreshLiveFeeds();
 });
-window.setInterval(() => refreshLiveFeeds(), AUTO_REFRESH_MS);

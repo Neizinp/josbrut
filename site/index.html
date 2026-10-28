@@ -10,14 +10,6 @@
     <script src="./app.js" defer></script>
   </head>
   <body>
-    <header class="topbar">
-      <a class="wordmark" href="./" aria-label="Rubrik, startsida"><span class="mark">R/</span> RUBRIK</a>
-      <span class="topbar-note">ETT SVENSKT NYHETSFLÖDE</span>
-      <button class="refresh-button" id="refresh-button" type="button" title="Hämta senaste uppdateringen" aria-label="Hämta senaste uppdateringen">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M5.6 9a7 7 0 0 1 11.6-2L20 12M4 12l2.8 5a7 7 0 0 0 11.6-2"/></svg>
-      </button>
-    </header>
-
     <main class="layout">
       <aside class="rail" aria-label="Källor">
         <div class="rail-heading"><span>BEVAKNING</span><span class="live-dot" aria-hidden="true"></span></div>
@@ -31,7 +23,6 @@
         <div class="edition-line"><span id="edition-label">SVERIGE / SENASTE</span><time id="today-date"></time></div>
         <div class="feed-heading">
           <div>
-            <p class="eyebrow">FEM KÄLLOR. ETT FLÖDE.</p>
             <h1 id="page-title">Sverige<br><span>i flöde.</span></h1>
           </div>
           <p class="intro">Rubrikerna, utan omvägar.<br>Alltid länkade till källan.</p>
@@ -43,17 +34,19 @@
             <input id="search-input" type="search" placeholder="Sök bland rubriker" autocomplete="off" aria-label="Sök bland rubriker">
             <kbd>/</kbd>
           </label>
+          <button class="refresh-button" id="refresh-button" type="button" title="Hämta senaste uppdateringen" aria-label="Hämta senaste uppdateringen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M5.6 9a7 7 0 0 1 11.6-2L20 12M4 12l2.8 5a7 7 0 0 0 11.6-2"/></svg>
+          </button>
           <div class="toolbar-status" id="results-status" aria-live="polite">Laddar flödet...</div>
         </div>
 
         <div id="feed-status" class="feed-status" role="status" hidden></div>
         <div class="article-list" id="article-list" aria-live="polite"></div>
         <div class="empty-state" id="empty-state" hidden>
-          <span class="empty-mark">R/</span>
           <h2>Inga rubriker här.</h2>
           <p>Prova en annan källa eller sökning.</p>
         </div>
-        <footer class="feed-footer"><span>RUBRIK / 2026</span><span>ÖPPNA ARTIKELN HOS KÄLLAN ↗</span></footer>
+        <footer class="feed-footer"><span>RSS / SENASTE 7 DYGN</span><span>ÖPPNA ARTIKELN HOS KÄLLAN ↗</span></footer>
       </section>
     </main>
   </body>

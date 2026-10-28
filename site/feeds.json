@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T12:38:03.307291+00:00",
+  "updatedAt": "2026-10-28T12:41:15.194843+00:00",
   "sources": [
     {
       "id": "omni",
@@ -29,12 +29,28 @@
   ],
   "articles": [
     {
+      "title": "Ukrainas öde går ändå före Mette Frederiksens ego",
+      "url": "https://www.sydsvenskan.se/opinion/huvudledare/ukrainas-ode-gar-anda-fore-mette-frederiksens-ego/",
+      "published": "Wed, 28 Oct 2026 12:39:37 GMT",
+      "description": "",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
       "title": "180 kvadratmeter stort hus för 7,5 miljoner",
       "url": "https://www.sydsvenskan.se/fastighetsaffarer/180-kvadratmeter-stort-hus-for-7-5-miljoner/",
       "published": "Wed, 28 Oct 2026 12:37:46 GMT",
       "description": "",
       "sourceId": "sydsvenskan",
       "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Paret förvandlar trädgården till ”Halloween House”",
+      "url": "https://omni.se/paret-forvandlar-tradgarden-till-halloween-house/a/Kr5xOG",
+      "published": "Wed, 28 Oct 2026 12:36:47 GMT",
+      "description": "Simon Bargholtz och hans fru Leticia förvandlar både trädgården och huset ute på Tyresö i Stockholm till ”Halloween House” varje år, rapporterar P4 Stockholm.",
+      "sourceId": "omni",
+      "sourceName": "Omni"
     },
     {
       "title": "Livsmedelstoppar slår larm: Sverige producerar inte tillräckligt med egen mat",
@@ -69,7 +85,7 @@
       "sourceName": "Sydsvenskan"
     },
     {
-      "title": "Man anhållen efter skjutningen i Bagarmossen",
+      "title": "36-årig man anhållen efter skjutningen i Bagarmossen",
       "url": "https://omni.se/en-person-anhallen-efter-skjutningen-i-bagarmossen/a/JrmdkR",
       "published": "Wed, 28 Oct 2026 12:26:10 GMT",
       "description": "En 36-årig man har gripits efter skjutningen i Bagarmossen söder om Stockholm i fredags, meddelar Åklagarmyndigheten.",
@@ -677,14 +693,6 @@
       "sourceName": "Omni"
     },
     {
-      "title": "Lekkerimäki hjälte i mäktig Vancouvervändning",
-      "url": "https://omni.se/lekkerimaki-hjalte-i-maktig-vancouvervandning/a/xl627Q",
-      "published": "Wed, 28 Oct 2026 07:02:58 GMT",
-      "description": "Vancouver Canucks stod för en mäktig upphämtning när laget vände 2–5 till seger med 6–5 efter förlängning mot Anaheim Ducks. Svenske Jonathan Lekkerimäki blev stor hjälte med två mål på 49 sekunder i slutminuterna.",
-      "sourceId": "omni",
-      "sourceName": "Omni"
-    },
-    {
       "title": "Snart är det slut på Stockholms rabatterade månadskorten",
       "url": "https://feber.se/samhalle/snart-ar-det-slut-pa-stockholms-rabatterade-manadskorten/497837/?utm_source=rss&utm_medium=feed",
       "published": "Wed, 28 Oct 2026 07:00:00 GMT",
@@ -833,14 +841,6 @@
       "url": "https://www.sydsvenskan.se/sport/hbk-profilerna-i-mff-de-ligger-val-sist-va/",
       "published": "Wed, 28 Oct 2026 05:14:00 GMT",
       "description": "De var supertalangerna i Halmstads BK som nu spelar för Malmö FF. Sead Haksabanovic och Bleon Kurtulus återvänder till Örjans vall med blandade känslor för den krisande moderklubben. – Man får ju hoppas på det bästa för dem, men det är i Malmö jag har mitt fokus, säger Bleon Kurt",
-      "sourceId": "sydsvenskan",
-      "sourceName": "Sydsvenskan"
-    },
-    {
-      "title": "Direktrapport om kriget i Ukraina och säkerhetsläget i Europa",
-      "url": "https://www.sydsvenskan.se/varlden/direktrapport-om-kriget-i-ukraina-och-sakerhetslaget-i-europa/",
-      "published": "Wed, 28 Oct 2026 05:05:01 GMT",
-      "description": "Följ vår direktrapportering om kriget i Ukraina och säkerhetsläget i Europa.",
       "sourceId": "sydsvenskan",
       "sourceName": "Sydsvenskan"
     },
@@ -1433,78 +1433,6 @@
       "url": "https://www.sweclockers.com/artikel/43316-rtx-agare-slipper-vanta-pa-shaders",
       "published": "Wed, 21 Oct 2026 18:00:00 +0200",
       "description": "Ny Geforce-drivrutin hämtar färdiga shaders från molnet, så spelet startar direkt.",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "Veckans fråga: Hur mycket betalar du för internet?",
-      "url": "https://www.sweclockers.com/artikel/43313-veckans-fraga-hur-mycket-betalar-du-for-internet",
-      "published": "Wed, 21 Oct 2026 12:00:00 +0200",
-      "description": "Bostadsrätten bjuder på gigabit medan villan punktar upp 600 kr. Var hamnar din uppkoppling hemma i månaden?",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "AMD satsar på ARM-baserade systemkretsar",
-      "url": "https://www.sweclockers.com/artikel/43312-amd-satsar-pa-arm-baserade-systemkretsar",
-      "published": "Wed, 21 Oct 2026 10:00:00 +0200",
-      "description": "Kallas Soundwave och ska sitta i kommande Microsoft Surface-modeller.",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "Potentiell Steam Deck 2-processor dyker upp i test",
-      "url": "https://www.sweclockers.com/artikel/43311-potentiell-steam-deck-2-processor-dyker-upp-i-test",
-      "published": "Wed, 21 Oct 2026 06:00:00 +0200",
-      "description": "Testexemplar av kretsen i ”Gainsborough”-familjen visar vad som kan vänta.",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "RTX 6060 kan dröja ända till 2029",
-      "url": "https://www.sweclockers.com/artikel/43310-rtx-6060-kan-droja-anda-till-2029",
-      "published": "Tue, 20 Oct 2026 16:32:03 +0200",
-      "description": "Nvidias nästa instegskort kan dröja till 2029, nästan fyra år efter RTX 5060.",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "Lokal AI Del 2: Företagshemlisar och praktikantjobb",
-      "url": "https://www.sweclockers.com/artikel/43286-lokal-ai-del-2-foretagshemlisar-och-praktikantjobb",
-      "published": "Tue, 20 Oct 2026 10:00:00 +0200",
-      "description": "Det har blivit dags att integrera AI i arbetsflödet. Produktivitet goes brrrr?",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "Sonys nya bildrute­generering använder handkontrollen",
-      "url": "https://www.sweclockers.com/artikel/43309-sonys-nya-bildrute-generering-anvander-handkontrollen",
-      "published": "Tue, 20 Oct 2026 09:00:00 +0200",
-      "description": "Spelarens fysiska rörelser fungerar som inmatning för att förutse nästa bildruta.",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "Överklockare slår 12 år gammalt rekord",
-      "url": "https://www.sweclockers.com/artikel/43308-overklockare-slar-12-ar-gammalt-rekord",
-      "published": "Tue, 20 Oct 2026 06:00:00 +0200",
-      "description": "Core i5-4670K är ingen nykomling på överklockningsscenen direkt.",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "POST S01E40: Hypen vi inte fattar",
-      "url": "https://www.sweclockers.com/artikel/43307-post-s01e40-hypen-vi-inte-fattar",
-      "published": "Mon, 19 Oct 2026 19:00:35 +0200",
-      "description": "André och Fredrik tar sig an teknikhyperna medlemmarna inte fattar, från AI-kylskåp till skärmar på 1000 Hz.",
-      "sourceId": "sweclockers",
-      "sourceName": "SweClockers"
-    },
-    {
-      "title": "Samsungs P7 och P9 minskar överföringstiden – med USB4-hastighet",
-      "url": "https://www.sweclockers.com/artikel/43291-samsungs-p7-och-p9-minskar-overforingstiden-med-usb4-hastighet",
-      "published": "Mon, 19 Oct 2026 16:00:00 +0200",
-      "description": "Samsungs nya SSD:er förkortar väntetiden dramatiskt när stora filer överförs från datorn.",
       "sourceId": "sweclockers",
       "sourceName": "SweClockers"
     }

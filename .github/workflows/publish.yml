@@ -31,8 +31,6 @@ jobs:
           python-version: "3.x"
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Fetch RSS feeds
         run: python scripts/fetch_feeds.py
       - name: Upload site artifact

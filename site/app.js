@@ -16,6 +16,7 @@ const refreshButton = document.querySelector("#refresh-button");
 let sources = FALLBACK_SOURCES;
 let articles = [];
 let selectedSource = "all";
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 
 function safeDate(value) {
   if (!value) return null;
@@ -64,10 +65,13 @@ function renderSources() {
 
 function renderArticles() {
   const query = searchInput.value.trim().toLocaleLowerCase("sv");
+  const now = Date.now();
   const filtered = articles.filter((article) => {
+    const published = safeDate(article.published)?.getTime();
+    const matchesAge = published !== undefined && published >= now - WEEK_MS && published <= now;
     const matchesSource = selectedSource === "all" || article.sourceId === selectedSource;
     const matchesQuery = !query || `${article.title} ${article.description} ${article.sourceName}`.toLocaleLowerCase("sv").includes(query);
-    return matchesSource && matchesQuery;
+    return matchesAge && matchesSource && matchesQuery;
   });
 
   articleList.replaceChildren();

@@ -15,7 +15,7 @@ python3 -m http.server 8000 --directory site
 
 ## Publicering och uppdateringar
 
-GitHub Actions hämtar flöden och publicerar GitHub Pages vid varje push till `main`, en gång i timmen och när arbetsflödet startas manuellt. Pages aktiveras av arbetsflödet. Den första publiceringen kan ta någon minut; adressen visas efteråt under repots **Settings → Pages** och i Actions-körningen.
+GitHub Actions hämtar flöden och publicerar GitHub Pages vid varje push till `main`, en gång i timmen och när arbetsflödet startas manuellt. GitHub Pages är aktiverat för repot med Actions som publiceringskälla. Sidan finns på `https://neizinp.github.io/josbrut/`.
 
 ## Lägg till en källa
 

@@ -7,7 +7,7 @@ import sys
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
@@ -111,6 +111,9 @@ def main():
             errors.append({"sourceId": source["id"], "message": str(error)[:180]})
             print(f"{source['name']}: kunde inte hämtas ({error})", file=sys.stderr)
 
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=7)
+    articles = [article for article in articles if cutoff <= sort_key(article) <= now]
     articles.sort(key=sort_key, reverse=True)
     payload = {
         "updatedAt": datetime.now(timezone.utc).isoformat(),

@@ -1,10 +1,10 @@
 const FALLBACK_SOURCES = [
-  { id: "omni", name: "Omni", home: "https://omni.se" },
-  { id: "svt", name: "SVT Nyheter", home: "https://www.svt.se/nyheter" },
-  { id: "sydsvenskan", name: "Sydsvenskan", home: "https://www.sydsvenskan.se" },
-  { id: "feber", name: "Feber", home: "https://feber.se" },
-  { id: "sweclockers", name: "SweClockers", home: "https://www.sweclockers.com" },
-  { id: "di", name: "Dagens industri", home: "https://www.di.se" },
+  { id: "omni", name: "Omni", home: "https://omni.se", feedUrl: "https://omni.se/rss.xml" },
+  { id: "svt", name: "SVT Nyheter", home: "https://www.svt.se/nyheter", feedUrl: "https://www.svt.se/nyheter/rss.xml" },
+  { id: "sydsvenskan", name: "Sydsvenskan", home: "https://www.sydsvenskan.se", feedUrl: "https://www.sydsvenskan.se/rss.xml" },
+  { id: "feber", name: "Feber", home: "https://feber.se", feedUrl: "https://feber.se/rss/" },
+  { id: "sweclockers", name: "SweClockers", home: "https://www.sweclockers.com", feedUrl: "https://www.sweclockers.com/feeds/nyheter" },
+  { id: "di", name: "Dagens industri", home: "https://www.di.se", feedUrl: "https://www.di.se/rss" },
 ];
 
 const sourceNav = document.querySelector("#source-nav");
@@ -16,8 +16,13 @@ const emptyState = document.querySelector("#empty-state");
 const refreshButton = document.querySelector("#refresh-button");
 let sources = FALLBACK_SOURCES;
 let articles = [];
+let feedUpdatedAt = "";
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+const LIVE_REFRESH_MS = 15 * 60 * 1000;
+const LIVE_REFRESH_KEY = "nyheter-live-refresh-at-v2";
+const LIVE_CACHE_KEY = "nyheter-live-feed-cache-v2";
+const FEED_PROXY = "https://r.jina.ai/";
 
 function safeDate(value) {
   if (!value) return null;
@@ -34,6 +39,91 @@ function ageLabel(value) {
   const hours = Math.floor(minutes / 60);
   if (hours < 24) return `${hours} TIM`;
   return `${Math.floor(hours / 24)} DAG`;
+}
+
+function parseFeedDate(text) {
+  const match = text.match(/(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+\d{1,2}\s+[A-Za-z]{3}\s+\d{4}\s+\d{2}:\d{2}:\d{2}\s+(?:GMT|[+-]\d{2}:?\d{2})/);
+  return match ? new Date(match[0]).toISOString() : "";
+}
+
+function titleFromUrl(value) {
+  try {
+    const segments = new URL(value).pathname.split("/").filter(Boolean);
+    while (segments.length && /^\d+$/.test(segments[segments.length - 1])) segments.pop();
+    const slug = decodeURIComponent(segments[segments.length - 1] || "");
+    return slug.replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim().replace(/^\p{L}/u, (letter) => letter.toLocaleUpperCase("sv"));
+  } catch {
+    return "";
+  }
+}
+
+function parseProxyFeed(markdown, source, previousArticles) {
+  const content = markdown.split("Markdown Content:").slice(1).join("Markdown Content:");
+  const sections = content.split(/^###\s+/m).slice(1);
+  const previousByUrl = new Map(previousArticles.map((article) => [article.url, article]));
+  const sourceHost = new URL(source.feedUrl).hostname.replace(/^www\./, "");
+  const parsed = [];
+
+  for (const section of sections) {
+    const heading = section.match(/^\[(.*?)\]\((https?:\/\/[^)]+)\)/);
+    if (!heading) continue;
+
+    const url = heading[2];
+    let articleHost;
+    try {
+      articleHost = new URL(url).hostname.replace(/^www\./, "");
+    } catch {
+      continue;
+    }
+    if (articleHost !== sourceHost && !articleHost.endsWith(`.${sourceHost}`)) continue;
+
+    const oldArticle = previousByUrl.get(url);
+    const published = parseFeedDate(section) || oldArticle?.published;
+    if (!published) continue;
+    const title = heading[1].trim() || oldArticle?.title || titleFromUrl(url);
+    const lines = section.slice(heading[0].length).split("\n");
+    const descriptionLines = lines.filter((line) => {
+      const trimmed = line.trim();
+      if (!trimmed || /^\[?https?:\/\//i.test(trimmed) || /^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+\d{1,2}\s+[A-Za-z]{3}\s+\d{4}/.test(trimmed)) return false;
+      return true;
+    });
+    const description = descriptionLines.join(" ")
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/[*_`>#]/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 280);
+
+    parsed.push({
+      title,
+      url,
+      published,
+      description: description || oldArticle?.description || "",
+      sourceId: source.id,
+      sourceName: source.name,
+    });
+  }
+  return parsed.slice(0, 40);
+}
+
+function applyFeedPayload(payload) {
+  articles = Array.isArray(payload.articles) ? payload.articles : [];
+  feedUpdatedAt = payload.updatedAt || "";
+  if (Array.isArray(payload.sources) && payload.sources.length) {
+    const previousIds = new Set(sources.map((source) => source.id));
+    sources = payload.sources.map((source) => ({
+      ...FALLBACK_SOURCES.find((fallback) => fallback.id === source.id),
+      ...source,
+    }));
+    sources.forEach((source) => {
+      if (!previousIds.has(source.id)) selectedSources.add(source.id);
+    });
+    for (const sourceId of selectedSources) {
+      if (!sources.some((source) => source.id === sourceId)) selectedSources.delete(sourceId);
+    }
+  }
+  setUpdatedAt(payload.updatedAt);
+  renderArticles();
 }
 
 function renderSources() {
@@ -159,32 +249,105 @@ async function loadFeeds(showRefresh = false) {
     const response = await fetch(`./feeds.json?t=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) throw new Error("Nyhetsflödet kunde inte hämtas.");
     const payload = await response.json();
-    articles = Array.isArray(payload.articles) ? payload.articles : [];
-    if (Array.isArray(payload.sources) && payload.sources.length) {
-      const previousIds = new Set(sources.map((source) => source.id));
-      sources = payload.sources;
-      sources.forEach((source) => {
-        if (!previousIds.has(source.id)) selectedSources.add(source.id);
-      });
-      for (const sourceId of selectedSources) {
-        if (!sources.some((source) => source.id === sourceId)) selectedSources.delete(sourceId);
-      }
-    }
-    setUpdatedAt(payload.updatedAt);
+    applyFeedPayload(payload);
     if (payload.errors?.length) {
       const names = payload.errors.map((error) => sources.find((source) => source.id === error.sourceId)?.name || error.sourceId);
       showFeedState(`Kunde inte uppdatera: ${names.join(", ")}. Visar tillgängliga rubriker.`, true);
     }
     renderArticles();
   } catch (error) {
-    articles = [];
     renderArticles();
-    setUpdatedAt(null);
     showFeedState(`${error.message} Kontrollera anslutningen och försök igen.`, true);
   } finally {
     refreshButton.classList.remove("is-loading");
     refreshButton.disabled = false;
   }
+}
+
+function loadLocalLiveCache() {
+  try {
+    const cached = JSON.parse(localStorage.getItem(LIVE_CACHE_KEY) || "null");
+    const cachedAt = safeDate(cached?.updatedAt)?.getTime() || 0;
+    const currentAt = safeDate(feedUpdatedAt)?.getTime() || 0;
+    if (cached?.articles?.length && cachedAt > currentAt) applyFeedPayload(cached);
+  } catch {
+    localStorage.removeItem(LIVE_CACHE_KEY);
+  }
+}
+
+async function refreshLiveFeeds({ fromButton = false } = {}) {
+  const lastRefresh = Number(localStorage.getItem(LIVE_REFRESH_KEY) || 0);
+  const remaining = LIVE_REFRESH_MS - (Date.now() - lastRefresh);
+  if (remaining > 0) {
+    if (fromButton) {
+      const minutes = Math.ceil(remaining / 60000);
+      showFeedState(`Nästa livehämtning är tillgänglig om ${minutes} min.`);
+    }
+    return;
+  }
+
+  refreshButton.classList.add("is-loading");
+  refreshButton.disabled = true;
+  showFeedState("Hämtar senaste nyheterna från källorna …");
+  localStorage.setItem(LIVE_REFRESH_KEY, String(Date.now()));
+
+  const previousArticles = articles;
+  const results = await Promise.allSettled(sources.map(async (source) => {
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 25000);
+    try {
+      const response = await fetch(`${FEED_PROXY}${source.feedUrl}`, {
+        headers: { "X-No-Cache": "true" },
+        cache: "no-store",
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return { source, articles: parseProxyFeed(await response.text(), source, previousArticles) };
+    } finally {
+      window.clearTimeout(timeout);
+    }
+  }));
+
+  const refreshedIds = new Set();
+  const errors = [];
+  const nextArticles = [];
+  results.forEach((result, index) => {
+    const source = sources[index];
+    if (result.status === "fulfilled" && result.value.articles.length) {
+      refreshedIds.add(source.id);
+      nextArticles.push(...result.value.articles);
+    } else {
+      const message = result.status === "rejected" ? result.reason?.message : "Tomt eller okänt RSS-format";
+      errors.push(`${source.name} (${message})`);
+      nextArticles.push(...previousArticles.filter((article) => article.sourceId === source.id));
+    }
+  });
+
+  if (refreshedIds.size) {
+    const now = Date.now();
+    const freshArticles = nextArticles.filter((article) => {
+      const published = safeDate(article.published)?.getTime();
+      return published !== undefined && published >= now - WEEK_MS && published <= now;
+    }).sort((first, second) => safeDate(second.published) - safeDate(first.published));
+    const payload = {
+      updatedAt: new Date().toISOString(),
+      sources,
+      articles: freshArticles,
+      errors: errors.map((message) => ({ message })),
+    };
+    try {
+      localStorage.setItem(LIVE_CACHE_KEY, JSON.stringify(payload));
+    } catch {
+      showFeedState("Nyheterna hämtades, men webbläsarens lokala lagring är full.");
+    }
+    applyFeedPayload(payload);
+    showFeedState(errors.length ? `Uppdaterad. Kunde inte nå: ${errors.join(", ")}.` : "Nyheterna är uppdaterade.", errors.length > 0);
+  } else {
+    showFeedState("Livehämtningen misslyckades. Visar senast tillgängliga nyheter.", true);
+  }
+
+  refreshButton.classList.remove("is-loading");
+  refreshButton.disabled = false;
 }
 
 sourceNav.addEventListener("change", (event) => {
@@ -208,7 +371,7 @@ sourceNav.addEventListener("click", (event) => {
   renderArticles();
 });
 searchInput.addEventListener("input", renderArticles);
-refreshButton.addEventListener("click", () => loadFeeds(true));
+refreshButton.addEventListener("click", () => refreshLiveFeeds({ fromButton: true }));
 document.addEventListener("keydown", (event) => {
   if (event.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
     event.preventDefault();
@@ -222,5 +385,9 @@ document.addEventListener("keydown", (event) => {
 });
 
 renderSources();
-loadFeeds();
-window.setInterval(() => loadFeeds(), 5 * 60 * 1000);
+loadLocalLiveCache();
+loadFeeds().then(() => {
+  loadLocalLiveCache();
+  return refreshLiveFeeds();
+});
+window.setInterval(() => refreshLiveFeeds(), 60 * 1000);

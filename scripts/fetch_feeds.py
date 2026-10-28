@@ -117,7 +117,15 @@ def main():
     articles.sort(key=sort_key, reverse=True)
     payload = {
         "updatedAt": datetime.now(timezone.utc).isoformat(),
-        "sources": [{"id": source["id"], "name": source["name"], "home": source["home"]} for source in sources],
+        "sources": [
+            {
+                "id": source["id"],
+                "name": source["name"],
+                "home": source["home"],
+                "feedUrl": source["url"],
+            }
+            for source in sources
+        ],
         "articles": articles,
         "errors": errors,
     }

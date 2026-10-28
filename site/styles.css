@@ -4,7 +4,8 @@
   --ink: #171916;
   --muted: #72766d;
   --line: #c9ccc2;
-  --acid: #d7ff47;
+  --accent: #dce8f1;
+  --accent-hover: #e8eff5;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
@@ -17,7 +18,7 @@ button { cursor: pointer; }
 a { color: inherit; }
 .rail-heading, .live-label, .feed-footer { font-size: 10px; font-weight: 700; }
 .refresh-button { width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center; border: 1px solid var(--ink); background: transparent; }
-.refresh-button:hover { background: var(--acid); }
+.refresh-button:hover { background: var(--accent); }
 .refresh-button svg, .search-box svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .refresh-button.is-loading svg { animation: turn .8s linear infinite; }
 @keyframes turn { to { transform: rotate(360deg); } }
@@ -37,9 +38,9 @@ a { color: inherit; }
 .source-solo svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .source-solo:hover, .source-solo[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); background: var(--paper); }
 .source-solo:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
-.source-filter:hover { background: #e8eae1; }
-.source-filter.is-active { background: var(--acid); border-left-color: var(--ink); font-weight: 700; }
-.source-filter.is-partial { background: #e8eae1; border-left-color: var(--line); }
+.source-filter:hover { background: var(--accent-hover); }
+.source-filter.is-active { background: var(--accent); border-left-color: var(--ink); font-weight: 700; }
+.source-filter.is-partial { background: var(--accent-hover); border-left-color: var(--line); }
 .source-count { color: var(--muted); font-size: 10px; }
 .source-filter .source-count { margin-left: auto; }
 .rail-foot { margin-top: auto; border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 8px; color: var(--muted); font-size: 10px; }

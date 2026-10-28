@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T12:41:15.194843+00:00",
+  "updatedAt": "2026-10-28T12:47:50.899435+00:00",
   "sources": [
     {
       "id": "omni",
@@ -25,9 +25,46 @@
       "id": "sweclockers",
       "name": "SweClockers",
       "home": "https://www.sweclockers.com"
+    },
+    {
+      "id": "di",
+      "name": "Dagens industri",
+      "home": "https://www.di.se"
     }
   ],
   "articles": [
+    {
+      "title": "Minnesord om Dan-Erik Andersson",
+      "url": "https://www.sydsvenskan.se/familj/minnesord-om-dan-erik-andersson/",
+      "published": "Wed, 28 Oct 2026 12:45:00 GMT",
+      "description": "Vår vän och kollega Dan-Erik Andersson, Lund, är död. Han blev 56 år.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Efter tågkatastrofen – hel cupomgång skjuts upp",
+      "url": "https://www.sydsvenskan.se/sport/efter-olyckan-alla-spanska-cupmatcher-skjuts-upp/",
+      "published": "Wed, 28 Oct 2026 12:44:50 GMT",
+      "description": "Onsdagens matcher i spanska cupen, Copa del Rey, flyttas fram efter tågolyckan utanför Toledo. Spanska fotbollsförbundet (RFEF) meddelar på X att beslutet fattats ”som ett tecken på respekt och solidaritet med alla offer”.",
+      "sourceId": "sydsvenskan",
+      "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Höghastighetståg har krockat i Spanien – över 40 döda",
+      "url": "https://www.di.se/nyheter/hoghastighetstag-har-krockat-i-spanien-over-40-doda/",
+      "published": "Wed, 28 Oct 2026 12:43:27 GMT",
+      "description": "Två höghastighetståg har kolliderat i centrala Spanien. Minst ett 40-tal människor rapporteras ha omkommit. Sönderslagna tågvagnar ligger vid sidan av banvallen bland förvridna plåtstycken, andra vagnar står och lutar på rälsen.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "Skuldbomben tickar i Latourbolaget",
+      "url": "https://www.di.se/analys/skuldbomben-tickar-i-latourbolaget/",
+      "published": "Wed, 28 Oct 2026 12:41:21 GMT",
+      "description": "Fagerhults aktie rasar på onsdagen efter sin rapport. Räkna med sänkt utdelning nästa år. Risken finns till och med att belysningsbolaget kan tvingas till en nyemission.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
     {
       "title": "Ukrainas öde går ändå före Mette Frederiksens ego",
       "url": "https://www.sydsvenskan.se/opinion/huvudledare/ukrainas-ode-gar-anda-fore-mette-frederiksens-ego/",
@@ -37,12 +74,28 @@
       "sourceName": "Sydsvenskan"
     },
     {
+      "title": "Elpriset på årshögsta i Sydsverige",
+      "url": "https://www.di.se/live/elpriset-pa-arshogsta-i-sydsverige/",
+      "published": "Wed, 28 Oct 2026 12:39:23 GMT",
+      "description": "Från rea i helgen till högsta priset i år. Kasten är tvära för elpriset i Sydsverige.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
       "title": "180 kvadratmeter stort hus för 7,5 miljoner",
       "url": "https://www.sydsvenskan.se/fastighetsaffarer/180-kvadratmeter-stort-hus-for-7-5-miljoner/",
       "published": "Wed, 28 Oct 2026 12:37:46 GMT",
       "description": "",
       "sourceId": "sydsvenskan",
       "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "USA:s underskott i varuhandeln växte",
+      "url": "https://www.di.se/live/usa-s-underskott-i-varuhandeln-vaxte/",
+      "published": "Wed, 28 Oct 2026 12:36:48 GMT",
+      "description": "USA:s underskott i utrikeshandeln med varor noterades till 134,9 miljarder dollar i september, enligt preliminära siffror, efter ett underskott om 132,1 miljarder månaden före.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
     },
     {
       "title": "Paret förvandlar trädgården till ”Halloween House”",
@@ -61,20 +114,28 @@
       "sourceName": "Omni"
     },
     {
-      "title": "Efter tågkatastrofen – hel cupomgång skjuts upp",
-      "url": "https://www.sydsvenskan.se/sport/efter-olyckan-alla-spanska-cupmatcher-skjuts-upp/",
-      "published": "Wed, 28 Oct 2026 12:35:38 GMT",
-      "description": "Onsdagens matcher i spanska cupen, Copa del Rey, flyttas fram efter tågolyckan utanför Toledo. Spanska fotbollsförbundet (RFEF) meddelar på X att beslutet fattats ”som ett tecken på respekt och solidaritet med alla offer”.",
-      "sourceId": "sydsvenskan",
-      "sourceName": "Sydsvenskan"
-    },
-    {
       "title": "Sjövattenföreningen i Mariefred slipper betala SMS-haveriet",
       "url": "https://feber.se/mobil/sjovattenforeningen-i-mariefred-slipper-betala-sms-haveriet/497850/?utm_source=rss&utm_medium=feed",
       "published": "Wed, 28 Oct 2026 12:30:00 GMT",
       "description": "Telenor river miljonfakturan Förra veckan skrev vi lite om en sjövattenförening i Mariefred som åkte på en rätt så rejäl faktura efter ett hårdvarufel i föreningens vattenpumpar började kommunicera oavbrutet via SMS. Trots att föreningen trodde att de hade ett abonnemang med fria",
       "sourceId": "feber",
       "sourceName": "Feber"
+    },
+    {
+      "title": "Kritikstorm mot Fortnox: ”Vägrar bli utpressad”",
+      "url": "https://www.di.se/nyheter/kritikstorm-mot-fortnox-vagrar-bli-utpressad/",
+      "published": "Wed, 28 Oct 2026 12:29:18 GMT",
+      "description": "Missnöjet växer kring Fortnox affärsmetoder. Företagare uppger att de fått fakturor för en tjänst som aktiverats automatiskt, och i flera fall utan att de ens känt till att de varit kunder hos bolaget.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "Hedgefond uppges vilja köpa ut klassisk hamburgerkedja",
+      "url": "https://www.di.se/live/hedgefond-uppges-vilja-kopa-ut-klassisk-hamburgerkedja/",
+      "published": "Wed, 28 Oct 2026 12:27:51 GMT",
+      "description": "Hedgefonden Trian vill köpa ut den klassiska snabbmatskedjan Wendy’s för omkring 1,4 miljarder dollar. Det rapporterar Wall Street Journal med hänvisning till källor.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
     },
     {
       "title": "Snabbtåg i krock i Spanien – minst 40 döda",
@@ -91,6 +152,30 @@
       "description": "En 36-årig man har gripits efter skjutningen i Bagarmossen söder om Stockholm i fredags, meddelar Åklagarmyndigheten.",
       "sourceId": "omni",
       "sourceName": "Omni"
+    },
+    {
+      "title": "Grus i maskineriet för Epiroc",
+      "url": "https://www.di.se/nyheter/grus-i-maskineriet-for-epiroc/",
+      "published": "Wed, 28 Oct 2026 12:21:37 GMT",
+      "description": "Epiroc ökar både vinst och omsättning. Men marknaden hade förväntat sig högre orderingång och aktien rasade. ”Det är en bred efterfrågan därute, vilket egentligen är mer intressant än ett fåtal stora ordrar”, säger Epirocs vd Helena Hedblom.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "Netanyahu i täten – men ingen klar vinnare i Israel",
+      "url": "https://www.di.se/nyheter/netanyahu-i-taten-men-ingen-klar-vinnare-i-israel/",
+      "published": "Wed, 28 Oct 2026 12:21:29 GMT",
+      "description": "Det är jämnt mellan blocken när rösterna i Israels parlamentsval räknas. Benjamin Netanyahus sida ser ut att få något fler mandat, men sannolikt väntar ett låst läge. Partier som hittills fått kalla handen kan få en vågmästarroll.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "AAC Clyde Space bygger ut",
+      "url": "https://www.di.se/live/aac-clyde-space-bygger-ut/",
+      "published": "Wed, 28 Oct 2026 12:21:03 GMT",
+      "description": "Satellitsystembolaget AAC Clyde Space investerar i en global kapacitetsutbyggnad, vilket enligt bolaget krävs för att möta en ökande efterfrågan.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
     },
     {
       "title": "Så såg det ut vid olycksplatsen",
@@ -133,6 +218,30 @@
       "sourceName": "Sydsvenskan"
     },
     {
+      "title": "Börsen kring nollan – Electrolux Professional lyfter",
+      "url": "https://www.di.se/live/borsen-kring-nollan-electrolux-professional-lyfter/",
+      "published": "Wed, 28 Oct 2026 12:12:20 GMT",
+      "description": "Stockholmsbörsen bjuder inte på någon större indexdramatik och vid 13-slaget dansar både det breda OMXSPI-indexet och OMXS30 kring nollan.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "Sydkorea bötfäller Google och Apple",
+      "url": "https://www.di.se/live/sydkorea-botfaller-google-och-apple/",
+      "published": "Wed, 28 Oct 2026 12:03:48 GMT",
+      "description": "Sydkoreas medie- och telekommyndighet har beslutat att bötfälla Google och Apple på totalt 63,7 miljarder won, motsvarande nära 48 miljoner dollar, för påstått missbruk av deras dominerande ställning på marknaden för appbutiker.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "Sverige har inte råd att producera så lite mat",
+      "url": "https://www.di.se/debatt/sverige-har-inte-rad-att-producera-sa-lite-mat/",
+      "published": "Wed, 28 Oct 2026 12:03:04 GMT",
+      "description": "Den mat som inte produceras i vardagen kan inte heller trollas fram vid kris och krig. Med rätt förutsättningar kan Sverige producera mer god, högkvalitativ och näringsrik mat, skriver beslutsfattare från livsmedelsbranschen.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
       "title": "Dolph Lundgren berättar om våra mest banbrytande maskiner",
       "url": "https://feber.se/film/dolph-lundgren-berattar-om-vara-mest-banbrytande-maskiner/497857/?utm_source=rss&utm_medium=feed",
       "published": "Wed, 28 Oct 2026 12:00:00 GMT",
@@ -141,12 +250,36 @@
       "sourceName": "Feber"
     },
     {
+      "title": "Ordermiss från Epiroc: ”Ser en bra efterfrågan”",
+      "url": "https://www.di.se/ditv/vd-intervjuer/ordermiss-fran-epiroc-ser-en-bra-efterfragan/",
+      "published": "Wed, 28 Oct 2026 11:58:53 GMT",
+      "description": "Helena Hedblom kommenterar kvartalsrapporten",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "Ny ordermiss från Epiroc",
+      "url": "https://www.di.se/live/ny-ordermiss-fran-epiroc/",
+      "published": "Wed, 28 Oct 2026 11:56:57 GMT",
+      "description": "Gruvutrustningsbolaget Epiroc ökade omsättningen och lönsamheten under det tredje kvartalet – men bommade marknadens förväntningar. Liksom vid föregående kvartal var orderingången en besvikelse. ”Efterfrågan från gruvkunder var stark”, uppger vd Helena Hedblom. Det initiala falle",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
       "title": "OS-hjältarnas kritik: ”Alldeles för dåligt”",
       "url": "https://www.sydsvenskan.se/sport/os-hjaltarnas-kritik-alldeles-for-daligt/",
       "published": "Wed, 28 Oct 2026 11:55:03 GMT",
       "description": "Sverige har dubbla hopp i världstoppen i beachvolleyboll inför OS 2028. Ändå bubblar frustrationen bland stjärnorna mot tävlingsschemat och Internationella volleybollförbundet (FIVB). – Det är för dåligt, säger David Åhman.",
       "sourceId": "sydsvenskan",
       "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Brittiska uppgifter: Mindre bankskatt än väntat",
+      "url": "https://www.di.se/live/brittiska-uppgifter-mindre-bankskatt-an-vantat/",
+      "published": "Wed, 28 Oct 2026 11:48:08 GMT",
+      "description": "Storbritannien kommer att höja bankskatterna i mindre omfattning än vad som tidigare befarats. Det rapporterar Bloomberg News, med hänvisning till källor.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
     },
     {
       "title": "Beskedet: 36 länder deltar i Eurovision",
@@ -187,6 +320,22 @@
       "description": "Men kan dröja i EU... I och med dagens 27.2-uppdatering gör Apple sin nya Siri AI tillgänglig för fler användare runt om i världen genom att lägga till stöd för franska, japanska, koreanska, portugisiska och spanska. Den uppgraderade assistenten bygger på Apple Intelligence och k",
       "sourceId": "feber",
       "sourceName": "Feber"
+    },
+    {
+      "title": "Därför avvaktar bjässarna",
+      "url": "https://www.di.se/analys/darfor-avvaktar-bjassarna/",
+      "published": "Wed, 28 Oct 2026 11:16:10 GMT",
+      "description": "Inga höjningar nu men en till innan jul och sedan ytterligare två nästa år. Det är vad som väntas från både Federal Reserve och ECB. Veckans räntebesked kommer att granskas noga, inte minst av Riksbanken.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "Bedömare: Då kan Fed sänka teknikaktier",
+      "url": "https://www.di.se/nyheter/bedomare-da-kan-fed-sanka-teknikaktier/",
+      "published": "Wed, 28 Oct 2026 11:16:03 GMT",
+      "description": "De flesta bedömare räknar med att den amerikanska centralbanken Federal Reserve lämnar styrräntan oförändrad på onsdagskvällen. Ett mer hökaktigt tonläge riskerar enligt bedömare dock att sätta ny press på teknikaktier.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
     },
     {
       "title": "Stopp i tågtrafiken på Österlen – tills imorgon",
@@ -235,6 +384,22 @@
       "description": "Grafikkort och processorer byts ofta men nätagget och chassit kan hänga med i ett decennium. Vad är äldst hos dig?",
       "sourceId": "sweclockers",
       "sourceName": "SweClockers"
+    },
+    {
+      "title": "Jag har blivit förälder igen",
+      "url": "https://www.di.se/nyheter/jag-har-blivit-foralder-igen/",
+      "published": "Wed, 28 Oct 2026 11:00:00 GMT",
+      "description": "Det är hårt arbete att ta hand om en förälder. Det bör finnas hjälp för oss ”yrkesverksamma anhöriga” – vi sparar trots allt samhället 194 miljarder per år, skriver Emma Stenström.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
+    },
+    {
+      "title": "Börsmorgon 28 oktober 2026",
+      "url": "https://www.di.se/ditv/borsmorgon/borsmorgon-28-oktober-2026/",
+      "published": "Wed, 28 Oct 2026 10:52:44 GMT",
+      "description": "Under ledning av Fredrik Lennander och Pontus Herin",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
     },
     {
       "title": "Hovrätten ändrar domen – två döms för sexuellt ofredande",
@@ -291,6 +456,14 @@
       "description": "",
       "sourceId": "sydsvenskan",
       "sourceName": "Sydsvenskan"
+    },
+    {
+      "title": "Svårt att lockas av aktien",
+      "url": "https://www.di.se/analys/svart-att-lockas-av-aktien/",
+      "published": "Wed, 28 Oct 2026 10:23:08 GMT",
+      "description": "SSAB levererar en stabil rapport. Inom vissa segment tar stålbolaget tydligt marknadsandelar. Men det finns ett antal risker. Det är svårt att se ett tydligt köpläge efter de senaste årens kursrally.",
+      "sourceId": "di",
+      "sourceName": "Dagens industri"
     },
     {
       "title": "Tävla: Vinn biljetter till Timbuktu på Malmö arena",
@@ -833,14 +1006,6 @@
       "url": "https://www.sydsvenskan.se/inpa-livet/ulrika-53-omojligt-for-mig-att-tro-att-lovisa-inte-finns/",
       "published": "Wed, 28 Oct 2026 05:30:00 GMT",
       "description": "Ulrika Rydström är Lovisas mamma. Det kommer hon alltid att vara. Sorgen är bottenlös, Lovisa dog i cancer bara fem och ett halvt år gammal. Men det betyder inte att relationen till dottern har upphört eller att kärleken blivit mindre levande.",
-      "sourceId": "sydsvenskan",
-      "sourceName": "Sydsvenskan"
-    },
-    {
-      "title": "HBK-profilerna i MFF: ”De ligger väl sist, va?”",
-      "url": "https://www.sydsvenskan.se/sport/hbk-profilerna-i-mff-de-ligger-val-sist-va/",
-      "published": "Wed, 28 Oct 2026 05:14:00 GMT",
-      "description": "De var supertalangerna i Halmstads BK som nu spelar för Malmö FF. Sead Haksabanovic och Bleon Kurtulus återvänder till Örjans vall med blandade känslor för den krisande moderklubben. – Man får ju hoppas på det bästa för dem, men det är i Malmö jag har mitt fokus, säger Bleon Kurt",
       "sourceId": "sydsvenskan",
       "sourceName": "Sydsvenskan"
     },

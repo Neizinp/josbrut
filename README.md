@@ -1,6 +1,6 @@
 # Rubrik
 
-Ett svenskt, källbaserat nyhetsflöde inspirerat av enkelheten i Brutalist Report. Rubrik hämtar rubrik, tid och kort ingress från respektive RSS-flöde och länkar vidare till originalartikeln.
+Ett svenskt, källbaserat nyhetsflöde inspirerat av enkelheten i Brutalist Report. Rubrik hämtar rubrik, tid och kort ingress från respektive RSS-flöde och länkar vidare till originalartikeln. Källor: Omni, SVT Nyheter, Sydsvenskan, Feber, SweClockers och Dagens industri.
 
 ## Lokalt
 

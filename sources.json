@@ -3,5 +3,6 @@
   {"id": "svt", "name": "SVT Nyheter", "url": "https://www.svt.se/nyheter/rss.xml", "home": "https://www.svt.se/nyheter"},
   {"id": "sydsvenskan", "name": "Sydsvenskan", "url": "https://www.sydsvenskan.se/rss.xml", "home": "https://www.sydsvenskan.se"},
   {"id": "feber", "name": "Feber", "url": "https://feber.se/rss/", "home": "https://feber.se"},
-  {"id": "sweclockers", "name": "SweClockers", "url": "https://www.sweclockers.com/feeds/nyheter", "home": "https://www.sweclockers.com"}
+  {"id": "sweclockers", "name": "SweClockers", "url": "https://www.sweclockers.com/feeds/nyheter", "home": "https://www.sweclockers.com"},
+  {"id": "di", "name": "Dagens industri", "url": "https://www.di.se/rss", "home": "https://www.di.se"}
 ]

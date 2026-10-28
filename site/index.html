@@ -14,7 +14,11 @@
       <aside class="rail" aria-label="Källor">
         <div class="rail-heading"><span>BEVAKNING</span><span class="live-dot" aria-hidden="true"></span></div>
         <nav class="source-nav" id="source-nav" aria-label="Filtrera efter källa">
-          <button class="source-filter is-active" type="button" data-source="all" aria-pressed="true"><span>Alla rubriker</span><span class="source-count" id="all-count">0</span></button>
+          <label class="source-filter is-active" for="source-all">
+            <input id="source-all" type="checkbox" checked>
+            <span>Alla rubriker</span>
+            <span class="source-count" id="all-count">0</span>
+          </label>
         </nav>
         <div class="rail-foot"><span class="live-label">FLÖDET ÄR ÖPPET</span><span id="update-time">Väntar på nyheter</span></div>
       </aside>

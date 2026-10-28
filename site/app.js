@@ -4,6 +4,7 @@ const FALLBACK_SOURCES = [
   { id: "sydsvenskan", name: "Sydsvenskan", home: "https://www.sydsvenskan.se" },
   { id: "feber", name: "Feber", home: "https://feber.se" },
   { id: "sweclockers", name: "SweClockers", home: "https://www.sweclockers.com" },
+  { id: "di", name: "Dagens industri", home: "https://www.di.se" },
 ];
 
 const sourceNav = document.querySelector("#source-nav");
@@ -15,7 +16,7 @@ const emptyState = document.querySelector("#empty-state");
 const refreshButton = document.querySelector("#refresh-button");
 let sources = FALLBACK_SOURCES;
 let articles = [];
-let selectedSource = "all";
+const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 
 function safeDate(value) {
@@ -39,27 +40,34 @@ function renderSources() {
   const counts = Object.fromEntries(sources.map((source) => [source.id, 0]));
   articles.forEach((article) => { counts[article.sourceId] = (counts[article.sourceId] || 0) + 1; });
   document.querySelector("#all-count").textContent = String(articles.length);
-  sourceNav.querySelectorAll(".source-filter:not([data-source='all'])").forEach((button) => button.remove());
+  sourceNav.querySelectorAll(".source-filter[data-source]").forEach((label) => label.remove());
 
   sources.forEach((source) => {
-    const button = document.createElement("button");
-    button.className = `source-filter${selectedSource === source.id ? " is-active" : ""}`;
-    button.type = "button";
-    button.dataset.source = source.id;
-    button.setAttribute("aria-pressed", String(selectedSource === source.id));
-    const label = document.createElement("span");
-    label.textContent = source.name;
+    const label = document.createElement("label");
+    label.className = "source-filter";
+    label.htmlFor = `source-${source.id}`;
+    label.dataset.source = source.id;
+    const checkbox = document.createElement("input");
+    checkbox.id = `source-${source.id}`;
+    checkbox.type = "checkbox";
+    checkbox.checked = selectedSources.has(source.id);
     const count = document.createElement("span");
     count.className = "source-count";
     count.textContent = String(counts[source.id] || 0);
-    button.append(label, count);
-    sourceNav.append(button);
+    const sourceLabel = document.createElement("span");
+    sourceLabel.textContent = source.name;
+    label.append(checkbox, sourceLabel, count);
+    sourceNav.append(label);
   });
 
-  sourceNav.querySelectorAll(".source-filter").forEach((button) => {
-    const active = button.dataset.source === selectedSource;
-    button.classList.toggle("is-active", active);
-    button.setAttribute("aria-pressed", String(active));
+  const allCheckbox = document.querySelector("#source-all");
+  const selectedCount = sources.filter((source) => selectedSources.has(source.id)).length;
+  allCheckbox.checked = selectedCount === sources.length;
+  allCheckbox.indeterminate = selectedCount > 0 && selectedCount < sources.length;
+  allCheckbox.closest(".source-filter").classList.toggle("is-active", allCheckbox.checked);
+  allCheckbox.closest(".source-filter").classList.toggle("is-partial", allCheckbox.indeterminate);
+  sourceNav.querySelectorAll(".source-filter[data-source]").forEach((label) => {
+    label.classList.toggle("is-active", selectedSources.has(label.dataset.source));
   });
 }
 
@@ -69,7 +77,7 @@ function renderArticles() {
   const filtered = articles.filter((article) => {
     const published = safeDate(article.published)?.getTime();
     const matchesAge = published !== undefined && published >= now - WEEK_MS && published <= now;
-    const matchesSource = selectedSource === "all" || article.sourceId === selectedSource;
+    const matchesSource = selectedSources.has(article.sourceId);
     const matchesQuery = !query || `${article.title} ${article.description} ${article.sourceName}`.toLocaleLowerCase("sv").includes(query);
     return matchesAge && matchesSource && matchesQuery;
   });
@@ -137,7 +145,16 @@ async function loadFeeds(showRefresh = false) {
     if (!response.ok) throw new Error("Nyhetsflödet kunde inte hämtas.");
     const payload = await response.json();
     articles = Array.isArray(payload.articles) ? payload.articles : [];
-    if (Array.isArray(payload.sources) && payload.sources.length) sources = payload.sources;
+    if (Array.isArray(payload.sources) && payload.sources.length) {
+      const previousIds = new Set(sources.map((source) => source.id));
+      sources = payload.sources;
+      sources.forEach((source) => {
+        if (!previousIds.has(source.id)) selectedSources.add(source.id);
+      });
+      for (const sourceId of selectedSources) {
+        if (!sources.some((source) => source.id === sourceId)) selectedSources.delete(sourceId);
+      }
+    }
     setUpdatedAt(payload.updatedAt);
     if (payload.errors?.length) {
       const names = payload.errors.map((error) => sources.find((source) => source.id === error.sourceId)?.name || error.sourceId);
@@ -155,10 +172,17 @@ async function loadFeeds(showRefresh = false) {
   }
 }
 
-sourceNav.addEventListener("click", (event) => {
-  const button = event.target.closest(".source-filter");
-  if (!button) return;
-  selectedSource = button.dataset.source;
+sourceNav.addEventListener("change", (event) => {
+  const checkbox = event.target.closest("input[type='checkbox']");
+  if (!checkbox) return;
+  if (checkbox.id === "source-all") {
+    if (checkbox.checked) sources.forEach((source) => selectedSources.add(source.id));
+    else selectedSources.clear();
+  } else {
+    const sourceId = checkbox.closest("[data-source]").dataset.source;
+    if (checkbox.checked) selectedSources.add(sourceId);
+    else selectedSources.delete(sourceId);
+  }
   renderArticles();
 });
 searchInput.addEventListener("input", renderArticles);

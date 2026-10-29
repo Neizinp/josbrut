@@ -14,6 +14,8 @@ const resultsStatus = document.querySelector("#results-status");
 const feedStatus = document.querySelector("#feed-status");
 const emptyState = document.querySelector("#empty-state");
 const refreshButton = document.querySelector("#refresh-button");
+const loadMoreWrap = document.querySelector("#load-more-wrap");
+const loadMoreButton = document.querySelector("#load-more-button");
 let sources = FALLBACK_SOURCES;
 let articles = [];
 let feedUpdatedAt = "";
@@ -21,6 +23,9 @@ let lastUpdatedAt = null;
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 const MAX_ARTICLES_PER_SOURCE = 500;
+const INITIAL_ARTICLES_PER_SOURCE = 100;
+const ARTICLES_PER_PAGE = 100;
+let visibleArticlesPerSource = INITIAL_ARTICLES_PER_SOURCE;
 const LIVE_CACHE_KEY = "nyheter-live-feed-cache-v2";
 const FEED_PROXY = "https://r.jina.ai/";
 let liveRefreshInProgress = false;
@@ -201,10 +206,17 @@ function renderArticles() {
     const matchesQuery = !query || `${article.title} ${article.description} ${article.sourceName}`.toLocaleLowerCase("sv").includes(query);
     return matchesAge && matchesSource && matchesQuery;
   });
+  const visibleCounts = new Map();
+  const visible = filtered.filter((article) => {
+    const sourceCount = visibleCounts.get(article.sourceId) || 0;
+    if (sourceCount >= visibleArticlesPerSource) return false;
+    visibleCounts.set(article.sourceId, sourceCount + 1);
+    return true;
+  });
 
   articleList.replaceChildren();
   const fragment = document.createDocumentFragment();
-  filtered.forEach((article) => {
+  visible.forEach((article) => {
     const row = document.createElement("article");
     row.className = "article-row";
     const source = sources.find((item) => item.id === article.sourceId);
@@ -239,7 +251,8 @@ function renderArticles() {
   });
   articleList.append(fragment);
   emptyState.hidden = filtered.length !== 0;
-  updateResultsStatus(filtered.length);
+  loadMoreWrap.hidden = visible.length === filtered.length;
+  updateResultsStatus(visible.length);
   renderSources();
 }
 
@@ -387,6 +400,7 @@ sourceNav.addEventListener("change", (event) => {
     if (checkbox.checked) selectedSources.add(sourceId);
     else selectedSources.delete(sourceId);
   }
+  visibleArticlesPerSource = INITIAL_ARTICLES_PER_SOURCE;
   renderArticles();
 });
 sourceNav.addEventListener("click", (event) => {
@@ -394,9 +408,17 @@ sourceNav.addEventListener("click", (event) => {
   if (!soloButton) return;
   selectedSources.clear();
   selectedSources.add(soloButton.dataset.soloSource);
+  visibleArticlesPerSource = INITIAL_ARTICLES_PER_SOURCE;
   renderArticles();
 });
-searchInput.addEventListener("input", renderArticles);
+searchInput.addEventListener("input", () => {
+  visibleArticlesPerSource = INITIAL_ARTICLES_PER_SOURCE;
+  renderArticles();
+});
+loadMoreButton.addEventListener("click", () => {
+  visibleArticlesPerSource += ARTICLES_PER_PAGE;
+  renderArticles();
+});
 refreshButton.addEventListener("click", () => refreshLiveFeeds());
 document.addEventListener("keydown", (event) => {
   if (event.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {

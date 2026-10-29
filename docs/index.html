@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#f3f4ee">
     <meta name="description" content="Svenska rubriker från Omni, SVT, Sydsvenskan, Feber och SweClockers.">
     <title>Nyheter</title>
-    <link rel="stylesheet" href="./styles.css?v=remove-open-copy-1">
-    <script src="./app.js?v=week-feed-cap-1" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=load-more-100-1">
+    <script src="./app.js?v=load-more-100-1" defer></script>
   </head>
   <body>
     <main class="layout">
@@ -41,6 +41,9 @@
         <div class="empty-state" id="empty-state" hidden>
           <h2>Inga rubriker här.</h2>
           <p>Prova en annan källa eller sökning.</p>
+        </div>
+        <div class="load-more-wrap" id="load-more-wrap" hidden>
+          <button class="load-more-button" id="load-more-button" type="button">Ladda 100 till</button>
         </div>
         <footer class="feed-footer"><span>RSS / SENASTE 7 DYGN</span><span>ÖPPNA ARTIKELN HOS KÄLLAN ↗</span></footer>
       </section>

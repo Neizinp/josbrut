@@ -94,9 +94,36 @@ function parseRssFeed(xmlText, source, previousArticles) {
   return parsed.slice(0, MAX_ARTICLES_PER_SOURCE);
 }
 
+function mergeArticleArchive(existingArticles, incomingArticles) {
+  const now = Date.now();
+  const cutoff = now - WEEK_MS;
+  const archive = new Map();
+
+  for (const article of [...existingArticles, ...incomingArticles]) {
+    const published = safeDate(article.published)?.getTime();
+    if (published === undefined || published < cutoff || published > now) continue;
+
+    const key = `${article.sourceId}:${articleUrlKey(article.url)}`;
+    const previous = archive.get(key);
+    archive.set(key, {
+      ...previous,
+      ...article,
+      title: article.title || previous?.title || "",
+      description: article.description || previous?.description || "",
+    });
+  }
+
+  return [...archive.values()].sort((first, second) => safeDate(second.published) - safeDate(first.published));
+}
+
 function applyFeedPayload(payload) {
-  articles = Array.isArray(payload.articles) ? payload.articles : [];
-  feedUpdatedAt = payload.updatedAt || "";
+  const incomingArticles = Array.isArray(payload.articles) ? payload.articles : [];
+  articles = mergeArticleArchive(articles, incomingArticles);
+  const incomingUpdatedAt = safeDate(payload.updatedAt);
+  const currentUpdatedAt = safeDate(feedUpdatedAt);
+  if (incomingUpdatedAt && (!currentUpdatedAt || incomingUpdatedAt > currentUpdatedAt)) {
+    feedUpdatedAt = incomingUpdatedAt.toISOString();
+  }
   if (Array.isArray(payload.sources) && payload.sources.length) {
     const previousIds = new Set(sources.map((source) => source.id));
     sources = payload.sources.map((source) => ({
@@ -281,9 +308,7 @@ async function loadFeeds(showRefresh = false) {
 function loadLocalLiveCache() {
   try {
     const cached = JSON.parse(localStorage.getItem(LIVE_CACHE_KEY) || "null");
-    const cachedAt = safeDate(cached?.updatedAt)?.getTime() || 0;
-    const currentAt = safeDate(feedUpdatedAt)?.getTime() || 0;
-    if (cached?.articles?.length && cachedAt > currentAt) applyFeedPayload(cached);
+    if (cached?.articles?.length) applyFeedPayload(cached);
   } catch {
     localStorage.removeItem(LIVE_CACHE_KEY);
   }
@@ -316,7 +341,7 @@ async function refreshLiveFeeds() {
 
   const refreshedIds = new Set();
   const errors = [];
-  const nextArticles = [];
+  const nextArticles = [...previousArticles];
   results.forEach((result, index) => {
     const source = sources[index];
     if (result.status === "fulfilled" && result.value.articles.length) {
@@ -325,24 +350,18 @@ async function refreshLiveFeeds() {
     } else {
       const message = result.status === "rejected" ? result.reason?.message : "Tomt eller okänt RSS-format";
       errors.push(`${source.name} (${message})`);
-      nextArticles.push(...previousArticles.filter((article) => article.sourceId === source.id));
     }
   });
 
   if (refreshedIds.size) {
-    const now = Date.now();
-    const freshArticles = nextArticles.filter((article) => {
-      const published = safeDate(article.published)?.getTime();
-      return published !== undefined && published >= now - WEEK_MS && published <= now;
-    }).sort((first, second) => safeDate(second.published) - safeDate(first.published));
     const payload = {
       updatedAt: new Date().toISOString(),
       sources,
-      articles: freshArticles,
+      articles: mergeArticleArchive([], nextArticles),
       errors: errors.map((message) => ({ message })),
     };
     try {
-      localStorage.setItem(LIVE_CACHE_KEY, JSON.stringify(payload));
+      localStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ ...payload, articles: mergeArticleArchive(articles, payload.articles) }));
     } catch {
       showFeedState("Nyheterna hämtades, men webbläsarens lokala lagring är full.");
     }

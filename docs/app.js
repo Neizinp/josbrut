@@ -23,9 +23,9 @@ let lastUpdatedAt = null;
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 const MAX_ARTICLES_PER_SOURCE = 500;
-const INITIAL_ARTICLES_PER_SOURCE = 100;
+const INITIAL_VISIBLE_ARTICLES = 100;
 const ARTICLES_PER_PAGE = 100;
-let visibleArticlesPerSource = INITIAL_ARTICLES_PER_SOURCE;
+let visibleArticleLimit = INITIAL_VISIBLE_ARTICLES;
 const LIVE_CACHE_KEY = "nyheter-live-feed-cache-v2";
 const FEED_PROXY = "https://r.jina.ai/";
 let liveRefreshInProgress = false;
@@ -205,14 +205,8 @@ function renderArticles() {
     const matchesSource = selectedSources.has(article.sourceId);
     const matchesQuery = !query || `${article.title} ${article.description} ${article.sourceName}`.toLocaleLowerCase("sv").includes(query);
     return matchesAge && matchesSource && matchesQuery;
-  });
-  const visibleCounts = new Map();
-  const visible = filtered.filter((article) => {
-    const sourceCount = visibleCounts.get(article.sourceId) || 0;
-    if (sourceCount >= visibleArticlesPerSource) return false;
-    visibleCounts.set(article.sourceId, sourceCount + 1);
-    return true;
-  });
+  }).sort((first, second) => safeDate(second.published) - safeDate(first.published));
+  const visible = filtered.slice(0, visibleArticleLimit);
 
   articleList.replaceChildren();
   const fragment = document.createDocumentFragment();
@@ -400,7 +394,7 @@ sourceNav.addEventListener("change", (event) => {
     if (checkbox.checked) selectedSources.add(sourceId);
     else selectedSources.delete(sourceId);
   }
-  visibleArticlesPerSource = INITIAL_ARTICLES_PER_SOURCE;
+  visibleArticleLimit = INITIAL_VISIBLE_ARTICLES;
   renderArticles();
 });
 sourceNav.addEventListener("click", (event) => {
@@ -408,15 +402,15 @@ sourceNav.addEventListener("click", (event) => {
   if (!soloButton) return;
   selectedSources.clear();
   selectedSources.add(soloButton.dataset.soloSource);
-  visibleArticlesPerSource = INITIAL_ARTICLES_PER_SOURCE;
+  visibleArticleLimit = INITIAL_VISIBLE_ARTICLES;
   renderArticles();
 });
 searchInput.addEventListener("input", () => {
-  visibleArticlesPerSource = INITIAL_ARTICLES_PER_SOURCE;
+  visibleArticleLimit = INITIAL_VISIBLE_ARTICLES;
   renderArticles();
 });
 loadMoreButton.addEventListener("click", () => {
-  visibleArticlesPerSource += ARTICLES_PER_PAGE;
+  visibleArticleLimit += ARTICLES_PER_PAGE;
   renderArticles();
 });
 refreshButton.addEventListener("click", () => refreshLiveFeeds());

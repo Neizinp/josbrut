@@ -17,6 +17,7 @@ const refreshButton = document.querySelector("#refresh-button");
 let sources = FALLBACK_SOURCES;
 let articles = [];
 let feedUpdatedAt = "";
+let lastUpdatedAt = null;
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 const LIVE_CACHE_KEY = "nyheter-live-feed-cache-v2";
@@ -209,8 +210,30 @@ function renderArticles() {
   });
   articleList.append(fragment);
   emptyState.hidden = filtered.length !== 0;
-  resultsStatus.textContent = `${filtered.length} ${filtered.length === 1 ? "rubrik" : "rubriker"}`;
+  updateResultsStatus(filtered.length);
   renderSources();
+}
+
+function updateResultsStatus(count = articleList.querySelectorAll(".article-row").length) {
+  const headlineCount = `${count} ${count === 1 ? "rubrik" : "rubriker"}`;
+  if (!lastUpdatedAt) {
+    resultsStatus.textContent = headlineCount;
+    return;
+  }
+
+  const elapsedMinutes = Math.max(0, Math.floor((Date.now() - lastUpdatedAt.getTime()) / 60000));
+  const relativeTime = elapsedMinutes < 1
+    ? "nyss"
+    : elapsedMinutes < 60
+      ? `${elapsedMinutes} min sedan`
+      : elapsedMinutes < 1440
+        ? `${Math.floor(elapsedMinutes / 60)} tim sedan`
+        : `${Math.floor(elapsedMinutes / 1440)} d sedan`;
+  const clockTime = new Intl.DateTimeFormat("sv-SE", {
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(lastUpdatedAt);
+  resultsStatus.textContent = `${headlineCount} · ${clockTime} · ${relativeTime}`;
 }
 
 function showFeedState(message, isError = false) {
@@ -221,9 +244,11 @@ function showFeedState(message, isError = false) {
 
 function setUpdatedAt(value) {
   const date = safeDate(value);
+  lastUpdatedAt = date;
   document.querySelector("#update-time").textContent = date
     ? `Uppdaterad ${new Intl.DateTimeFormat("sv-SE", { hour: "2-digit", minute: "2-digit" }).format(date)}`
     : "Väntar på nyheter";
+  updateResultsStatus();
 }
 
 async function loadFeeds(showRefresh = false) {
@@ -238,6 +263,8 @@ async function loadFeeds(showRefresh = false) {
     if (payload.errors?.length) {
       const names = payload.errors.map((error) => sources.find((source) => source.id === error.sourceId)?.name || error.sourceId);
       showFeedState(`Kunde inte uppdatera: ${names.join(", ")}. Visar tillgängliga rubriker.`, true);
+    } else {
+      showFeedState("");
     }
     renderArticles();
   } catch (error) {
@@ -318,7 +345,7 @@ async function refreshLiveFeeds() {
       showFeedState("Nyheterna hämtades, men webbläsarens lokala lagring är full.");
     }
     applyFeedPayload(payload);
-    showFeedState(errors.length ? `Uppdaterad. Kunde inte nå: ${errors.join(", ")}.` : "Nyheterna är uppdaterade.", errors.length > 0);
+    showFeedState(errors.length ? `Uppdaterad. Kunde inte nå: ${errors.join(", ")}.` : "", errors.length > 0);
   } else {
     showFeedState("Livehämtningen misslyckades. Visar senast tillgängliga nyheter.", true);
   }
@@ -368,3 +395,4 @@ loadFeeds().then(() => {
   loadLocalLiveCache();
   return refreshLiveFeeds();
 });
+window.setInterval(() => updateResultsStatus(), 60 * 1000);

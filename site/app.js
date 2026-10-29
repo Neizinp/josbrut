@@ -20,6 +20,7 @@ let feedUpdatedAt = "";
 let lastUpdatedAt = null;
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
 const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+const MAX_ARTICLES_PER_SOURCE = 500;
 const LIVE_CACHE_KEY = "nyheter-live-feed-cache-v2";
 const FEED_PROXY = "https://r.jina.ai/";
 let liveRefreshInProgress = false;
@@ -61,7 +62,7 @@ function parseRssFeed(xmlText, source, previousArticles) {
   const previousByUrl = new Map(previousArticles.map((article) => [articleUrlKey(article.url), article]));
   const parsed = [];
 
-  for (const entry of entries.slice(0, 40)) {
+  for (const entry of entries) {
     const childText = (...names) => {
       const child = [...entry.children].find((element) => names.includes(element.localName));
       return child?.textContent?.trim() || "";
@@ -72,6 +73,7 @@ function parseRssFeed(xmlText, source, previousArticles) {
     const dateText = childText("pubDate", "published", "updated", "date");
     const published = dateText ? new Date(dateText) : null;
     if (!title || !url || !/^https?:\/\//i.test(url) || !published || Number.isNaN(published.getTime())) continue;
+    if (published.getTime() < Date.now() - WEEK_MS || published.getTime() > Date.now()) continue;
 
     const oldArticle = previousByUrl.get(articleUrlKey(url));
     const rawDescription = childText("description", "summary", "encoded", "content");
@@ -89,7 +91,7 @@ function parseRssFeed(xmlText, source, previousArticles) {
       sourceName: source.name,
     });
   }
-  return parsed.slice(0, 40);
+  return parsed.slice(0, MAX_ARTICLES_PER_SOURCE);
 }
 
 function applyFeedPayload(payload) {

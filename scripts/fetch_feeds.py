@@ -16,7 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "sources.json"
 OUTPUT_FILE = ROOT / "site" / "feeds.json"
-MAX_ITEMS_PER_SOURCE = 40
+MAX_ITEMS_PER_SOURCE = 500
+ARTICLE_WINDOW = timedelta(days=7)
 MAX_DESCRIPTION_LENGTH = 280
 
 
@@ -48,7 +49,8 @@ def parse_items(root, source):
         entries = root.findall(".//{http://www.w3.org/2005/Atom}entry")
 
     parsed = []
-    for entry in entries[:MAX_ITEMS_PER_SOURCE]:
+    parsed = []
+    for entry in entries:
         title = item_value(entry, "title", "title")
         link = item_value(entry, "link", "link")
         if not title or not link or not link.startswith(("https://", "http://")):
@@ -62,15 +64,19 @@ def parse_items(root, source):
             or item_value(entry, "published", "published")
             or item_value(entry, "updated", "updated")
         )
-        parsed.append({
+        article = {
             "title": title,
             "url": link,
             "published": published,
             "description": description,
             "sourceId": source["id"],
             "sourceName": source["name"],
-        })
-    return parsed
+        }
+        published_at = sort_key(article)
+        now = datetime.now(timezone.utc)
+        if now - ARTICLE_WINDOW <= published_at <= now:
+            parsed.append(article)
+    return parsed[:MAX_ITEMS_PER_SOURCE]
 
 
 def fetch_source(source):

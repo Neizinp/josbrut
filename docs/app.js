@@ -155,8 +155,13 @@ function applyFeedPayload(payload) {
 
 function renderSources() {
   const counts = Object.fromEntries(sources.map((source) => [source.id, 0]));
-  articles.forEach((article) => { counts[article.sourceId] = (counts[article.sourceId] || 0) + 1; });
-  document.querySelector("#all-count").textContent = String(articles.length);
+  const now = Date.now();
+  articles.forEach((article) => {
+    const published = safeDate(article.published)?.getTime();
+    if (published === undefined || published < now - WEEK_MS || published > now) return;
+    counts[article.sourceId] = (counts[article.sourceId] || 0) + 1;
+  });
+  document.querySelector("#all-count").textContent = String(Object.values(counts).reduce((total, count) => total + count, 0));
   sourceNav.querySelectorAll(".source-filter[data-source]").forEach((label) => label.remove());
 
   sources.forEach((source) => {

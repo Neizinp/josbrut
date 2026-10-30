@@ -118,7 +118,14 @@ function mergeArticleArchive(existingArticles, incomingArticles) {
     });
   }
 
-  return [...archive.values()].sort((first, second) => safeDate(second.published) - safeDate(first.published));
+  const sorted = [...archive.values()].sort((first, second) => safeDate(second.published) - safeDate(first.published));
+  const sourceCounts = new Map();
+  return sorted.filter((article) => {
+    const count = sourceCounts.get(article.sourceId) || 0;
+    if (count >= MAX_ARTICLES_PER_SOURCE) return false;
+    sourceCounts.set(article.sourceId, count + 1);
+    return true;
+  });
 }
 
 function applyFeedPayload(payload) {
@@ -315,7 +322,12 @@ async function loadFeeds(showRefresh = false) {
 function loadLocalLiveCache() {
   try {
     const cached = JSON.parse(localStorage.getItem(LIVE_CACHE_KEY) || "null");
-    if (cached?.articles?.length) applyFeedPayload(cached);
+    if (cached?.articles?.length) {
+      const cleanedArticles = mergeArticleArchive(articles, cached.articles);
+      const cleanedCache = { ...cached, articles: cleanedArticles };
+      applyFeedPayload(cleanedCache);
+      localStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ ...cleanedCache, articles }));
+    }
   } catch {
     localStorage.removeItem(LIVE_CACHE_KEY);
   }

@@ -432,4 +432,7 @@ loadFeeds().then(() => {
   loadLocalLiveCache();
   return refreshLiveFeeds();
 });
-window.setInterval(() => updateResultsStatus(), 60 * 1000);
+window.setInterval(() => {
+  renderArticles();
+  updateResultsStatus();
+}, 60 * 1000);

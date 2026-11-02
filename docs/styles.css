@@ -29,11 +29,11 @@ a { color: inherit; }
 .source-nav { display: grid; gap: 2px; padding-top: 12px; }
 .source-filter { display: flex; justify-content: space-between; align-items: center; min-height: 38px; padding: 0 5px 0 9px; background: transparent; border: 0; border-left: 2px solid transparent; }
 .source-choice { display: flex; align-items: center; flex: 1; min-width: 0; min-height: 36px; cursor: pointer; }
-.source-choice input { appearance: none; width: 15px; height: 15px; flex: 0 0 15px; margin: 0 9px 0 0; display: grid; place-items: center; border: 1px solid var(--muted); background: transparent; }
-.source-choice input::before { content: ""; width: 7px; height: 4px; border-left: 2px solid var(--paper); border-bottom: 2px solid var(--paper); transform: rotate(-45deg) scale(0); }
-.source-choice input:checked { border-color: var(--checkbox-blue); background: var(--checkbox-blue); }
-.source-choice input:checked::before { transform: rotate(-45deg) scale(1); }
-.source-choice input:focus-visible { outline: 2px solid var(--checkbox-blue); outline-offset: 2px; }
+.source-filter input[type="checkbox"] { appearance: none; width: 15px; height: 15px; flex: 0 0 15px; margin: 0 9px 0 0; display: grid; place-items: center; border: 1px solid var(--muted); background: transparent; }
+.source-filter input[type="checkbox"]::before { content: ""; width: 7px; height: 4px; border-left: 2px solid var(--paper); border-bottom: 2px solid var(--paper); transform: rotate(-45deg) scale(0); }
+.source-filter input[type="checkbox"]:checked { border-color: var(--checkbox-blue); background: var(--checkbox-blue); }
+.source-filter input[type="checkbox"]:checked::before { transform: rotate(-45deg) scale(1); }
+.source-filter input[type="checkbox"]:focus-visible { outline: 2px solid var(--checkbox-blue); outline-offset: 2px; }
 .source-solo { width: 27px; height: 27px; flex: 0 0 27px; display: grid; place-items: center; border: 1px solid transparent; background: transparent; color: var(--muted); }
 .source-solo svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .source-solo:hover, .source-solo[aria-pressed="true"] { border-color: var(--line); color: var(--ink); background: var(--accent); }

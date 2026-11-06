@@ -21,7 +21,6 @@ let articles = [];
 let feedUpdatedAt = "";
 let lastUpdatedAt = null;
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
-const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
 const MAX_ARTICLES_PER_SOURCE = 500;
 const INITIAL_VISIBLE_ARTICLES = 100;
 const ARTICLES_PER_PAGE = 100;
@@ -78,7 +77,7 @@ function parseRssFeed(xmlText, source, previousArticles) {
     const dateText = childText("pubDate", "published", "updated", "date");
     const published = dateText ? new Date(dateText) : null;
     if (!title || !url || !/^https?:\/\//i.test(url) || !published || Number.isNaN(published.getTime())) continue;
-    if (published.getTime() < Date.now() - WEEK_MS || published.getTime() > Date.now()) continue;
+    if (published.getTime() > Date.now()) continue;
 
     const oldArticle = previousByUrl.get(articleUrlKey(url));
     const rawDescription = childText("description", "summary", "encoded", "content");
@@ -96,17 +95,18 @@ function parseRssFeed(xmlText, source, previousArticles) {
       sourceName: source.name,
     });
   }
-  return parsed.slice(0, MAX_ARTICLES_PER_SOURCE);
+  return parsed
+    .sort((first, second) => safeDate(second.published) - safeDate(first.published))
+    .slice(0, MAX_ARTICLES_PER_SOURCE);
 }
 
 function mergeArticleArchive(existingArticles, incomingArticles) {
   const now = Date.now();
-  const cutoff = now - WEEK_MS;
   const archive = new Map();
 
   for (const article of [...existingArticles, ...incomingArticles]) {
     const published = safeDate(article.published)?.getTime();
-    if (published === undefined || published < cutoff || published > now) continue;
+    if (published === undefined || published > now) continue;
 
     const key = `${article.sourceId}:${articleUrlKey(article.url)}`;
     const previous = archive.get(key);
@@ -155,10 +155,9 @@ function applyFeedPayload(payload) {
 
 function renderSources() {
   const counts = Object.fromEntries(sources.map((source) => [source.id, 0]));
-  const now = Date.now();
   articles.forEach((article) => {
     const published = safeDate(article.published)?.getTime();
-    if (published === undefined || published < now - WEEK_MS || published > now) return;
+    if (published === undefined || published > Date.now()) return;
     counts[article.sourceId] = (counts[article.sourceId] || 0) + 1;
   });
   document.querySelector("#all-count").textContent = String(Object.values(counts).reduce((total, count) => total + count, 0));
@@ -213,7 +212,7 @@ function renderArticles() {
   const now = Date.now();
   const filtered = articles.filter((article) => {
     const published = safeDate(article.published)?.getTime();
-    const matchesAge = published !== undefined && published >= now - WEEK_MS && published <= now;
+    const matchesAge = published !== undefined && published <= now;
     const matchesSource = selectedSources.has(article.sourceId);
     const matchesQuery = !query || `${article.title} ${article.description} ${article.sourceName}`.toLocaleLowerCase("sv").includes(query);
     return matchesAge && matchesSource && matchesQuery;

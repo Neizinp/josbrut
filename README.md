@@ -10,11 +10,11 @@ Starta en statisk server från projektmappen:
 python3 -m http.server 8000 --directory docs
 ```
 
-Öppna `http://localhost:8000`. RSS hämtas i webbläsaren när sidan öppnas eller när du trycker på uppdatera. Webbläsaren sparar ett rullande arkiv för de senaste sju dygnen lokalt.
+Öppna `http://localhost:8000`. RSS hämtas i webbläsaren när sidan öppnas eller när du trycker på uppdatera. Webbläsaren sparar de 500 senaste nyheterna per källa lokalt.
 
 ## Publicering och uppdateringar
 
-GitHub Actions används inte. GitHub Pages publicerar direkt från `main/docs`; RSS hämtas i besökarens webbläsare när sidan öppnas eller uppdateras manuellt. Arkivet sparas per webbläsare och delas inte mellan användare eller enheter. Sidan finns på `https://neizinp.github.io/josbrut/`.
+GitHub Actions används inte. GitHub Pages publicerar direkt från `main/docs`; RSS hämtas i besökarens webbläsare när sidan öppnas eller uppdateras manuellt. De 500 senaste nyheterna per källa sparas per webbläsare och delas inte mellan användare eller enheter. Sidan finns på `https://neizinp.github.io/josbrut/`.
 
 ## Lägg till en källa
 

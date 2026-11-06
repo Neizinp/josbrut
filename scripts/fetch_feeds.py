@@ -7,7 +7,7 @@ import sys
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
@@ -17,7 +17,6 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "sources.json"
 OUTPUT_FILE = ROOT / "site" / "feeds.json"
 MAX_ITEMS_PER_SOURCE = 500
-ARTICLE_WINDOW = timedelta(days=7)
 MAX_DESCRIPTION_LENGTH = 280
 
 
@@ -49,7 +48,7 @@ def parse_items(root, source):
         entries = root.findall(".//{http://www.w3.org/2005/Atom}entry")
 
     parsed = []
-    parsed = []
+    now = datetime.now(timezone.utc)
     for entry in entries:
         title = item_value(entry, "title", "title")
         link = item_value(entry, "link", "link")
@@ -73,9 +72,9 @@ def parse_items(root, source):
             "sourceName": source["name"],
         }
         published_at = sort_key(article)
-        now = datetime.now(timezone.utc)
-        if now - ARTICLE_WINDOW <= published_at <= now:
+        if published_at != datetime.min.replace(tzinfo=timezone.utc) and published_at <= now:
             parsed.append(article)
+    parsed.sort(key=sort_key, reverse=True)
     return parsed[:MAX_ITEMS_PER_SOURCE]
 
 
@@ -117,9 +116,6 @@ def main():
             errors.append({"sourceId": source["id"], "message": str(error)[:180]})
             print(f"{source['name']}: kunde inte hämtas ({error})", file=sys.stderr)
 
-    now = datetime.now(timezone.utc)
-    cutoff = now - timedelta(days=7)
-    articles = [article for article in articles if cutoff <= sort_key(article) <= now]
     articles.sort(key=sort_key, reverse=True)
     payload = {
         "updatedAt": datetime.now(timezone.utc).isoformat(),

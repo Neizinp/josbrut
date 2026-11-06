@@ -58,6 +58,8 @@ def parse_items(root, source):
         description = item_value(entry, "description") or item_value(entry, "summary", "summary")
         description = re.sub(r"<[^>]*>", " ", unescape(description))
         description = " ".join(description.split())[:MAX_DESCRIPTION_LENGTH]
+        if source["id"] == "sydsvenskan" and not description:
+            continue
         published = (
             item_value(entry, "pubDate")
             or item_value(entry, "published", "published")

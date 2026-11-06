@@ -85,6 +85,7 @@ function parseRssFeed(xmlText, source, previousArticles) {
       .replace(/\s+/g, " ")
       .trim()
       .slice(0, 280);
+    if (source.id === "sydsvenskan" && !description) continue;
 
     parsed.push({
       title,
@@ -107,6 +108,7 @@ function mergeArticleArchive(existingArticles, incomingArticles) {
   for (const article of [...existingArticles, ...incomingArticles]) {
     const published = safeDate(article.published)?.getTime();
     if (published === undefined || published > now) continue;
+    if (article.sourceId === "sydsvenskan" && !article.description?.trim()) continue;
 
     const key = `${article.sourceId}:${articleUrlKey(article.url)}`;
     const previous = archive.get(key);

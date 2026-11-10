@@ -18,4 +18,4 @@ GitHub Actions används inte. GitHub Pages publicerar direkt från `main/docs`; 
 
 ## Lägg till en källa
 
-Lägg till källan i `sources.json` och `FALLBACK_SOURCES` i `docs/app.js` med ett unikt id, namn, webbplats och RSS-adress. Lägg också till källan i `sources`-listan i `docs/feeds.json`.
+Lägg till källan i `sources.json` och `FALLBACK_SOURCES` i `docs/app.js` med ett unikt id, namn, webbplats och RSS-adress. Lägg också till källan i `sources`-listan i `docs/feeds.json`. Håll alla tre listorna sorterade alfabetiskt efter källans namn; appen sorterar också inkommande källistor automatiskt.

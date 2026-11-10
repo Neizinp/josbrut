@@ -2,6 +2,18 @@
   "updatedAt": "2026-10-29T12:53:36.256816+00:00",
   "sources": [
     {
+      "id": "di",
+      "name": "Dagens industri",
+      "home": "https://www.di.se",
+      "feedUrl": "https://www.di.se/rss"
+    },
+    {
+      "id": "feber",
+      "name": "Feber",
+      "home": "https://feber.se",
+      "feedUrl": "https://feber.se/rss/"
+    },
+    {
       "id": "omni",
       "name": "Omni",
       "home": "https://omni.se",
@@ -14,28 +26,16 @@
       "feedUrl": "https://www.svt.se/nyheter/rss.xml"
     },
     {
-      "id": "sydsvenskan",
-      "name": "Sydsvenskan",
-      "home": "https://www.sydsvenskan.se",
-      "feedUrl": "https://www.sydsvenskan.se/rss.xml"
-    },
-    {
-      "id": "feber",
-      "name": "Feber",
-      "home": "https://feber.se",
-      "feedUrl": "https://feber.se/rss/"
-    },
-    {
       "id": "sweclockers",
       "name": "SweClockers",
       "home": "https://www.sweclockers.com",
       "feedUrl": "https://www.sweclockers.com/feeds/nyheter"
     },
     {
-      "id": "di",
-      "name": "Dagens industri",
-      "home": "https://www.di.se",
-      "feedUrl": "https://www.di.se/rss"
+      "id": "sydsvenskan",
+      "name": "Sydsvenskan",
+      "home": "https://www.sydsvenskan.se",
+      "feedUrl": "https://www.sydsvenskan.se/rss.xml"
     },
     {
       "id": "tjock",

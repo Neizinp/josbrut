@@ -1,10 +1,10 @@
 const FALLBACK_SOURCES = [
+  { id: "di", name: "Dagens industri", home: "https://www.di.se", feedUrl: "https://www.di.se/rss" },
+  { id: "feber", name: "Feber", home: "https://feber.se", feedUrl: "https://feber.se/rss/" },
   { id: "omni", name: "Omni", home: "https://omni.se", feedUrl: "https://omni.se/rss.xml" },
   { id: "svt", name: "SVT Nyheter", home: "https://www.svt.se/nyheter", feedUrl: "https://www.svt.se/nyheter/rss.xml" },
-  { id: "sydsvenskan", name: "Sydsvenskan", home: "https://www.sydsvenskan.se", feedUrl: "https://www.sydsvenskan.se/rss.xml" },
-  { id: "feber", name: "Feber", home: "https://feber.se", feedUrl: "https://feber.se/rss/" },
   { id: "sweclockers", name: "SweClockers", home: "https://www.sweclockers.com", feedUrl: "https://www.sweclockers.com/feeds/nyheter" },
-  { id: "di", name: "Dagens industri", home: "https://www.di.se", feedUrl: "https://www.di.se/rss" },
+  { id: "sydsvenskan", name: "Sydsvenskan", home: "https://www.sydsvenskan.se", feedUrl: "https://www.sydsvenskan.se/rss.xml" },
   { id: "tjock", name: "Tjock", home: "https://tjock.se/", feedUrl: "https://tjock.se/rss/" },
 ];
 
@@ -144,7 +144,7 @@ function applyFeedPayload(payload) {
     sources = payload.sources.map((source) => ({
       ...FALLBACK_SOURCES.find((fallback) => fallback.id === source.id),
       ...source,
-    }));
+    })).sort((first, second) => first.name.localeCompare(second.name, "sv"));
     sources.forEach((source) => {
       if (!previousIds.has(source.id)) selectedSources.add(source.id);
     });

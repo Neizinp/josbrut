@@ -5,6 +5,7 @@ const FALLBACK_SOURCES = [
   { id: "feber", name: "Feber", home: "https://feber.se", feedUrl: "https://feber.se/rss/" },
   { id: "sweclockers", name: "SweClockers", home: "https://www.sweclockers.com", feedUrl: "https://www.sweclockers.com/feeds/nyheter" },
   { id: "di", name: "Dagens industri", home: "https://www.di.se", feedUrl: "https://www.di.se/rss" },
+  { id: "tjock", name: "Tjock", home: "https://tjock.se/", feedUrl: "https://tjock.se/rss/" },
 ];
 
 const sourceNav = document.querySelector("#source-nav");

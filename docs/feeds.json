@@ -36,6 +36,12 @@
       "name": "Dagens industri",
       "home": "https://www.di.se",
       "feedUrl": "https://www.di.se/rss"
+    },
+    {
+      "id": "tjock",
+      "name": "Tjock",
+      "home": "https://tjock.se/",
+      "feedUrl": "https://tjock.se/rss/"
     }
   ],
   "articles": [

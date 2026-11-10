@@ -1,6 +1,6 @@
 # Rubrik
 
-Ett svenskt, källbaserat nyhetsflöde inspirerat av enkelheten i Brutalist Report. Rubrik hämtar rubrik, tid och kort ingress från respektive RSS-flöde och länkar vidare till originalartikeln. Källor: Omni, SVT Nyheter, Sydsvenskan, Feber, SweClockers och Dagens industri.
+Ett svenskt, källbaserat nyhetsflöde inspirerat av enkelheten i Brutalist Report. Rubrik hämtar rubrik, tid och kort ingress från respektive RSS-flöde och länkar vidare till originalartikeln. Källor: Omni, SVT Nyheter, Sydsvenskan, Feber, SweClockers, Dagens industri och Tjock.
 
 ## Lokalt
 
@@ -18,4 +18,4 @@ GitHub Actions används inte. GitHub Pages publicerar direkt från `main/docs`; 
 
 ## Lägg till en källa
 
-Lägg till källan i `FALLBACK_SOURCES` i `docs/app.js` med ett unikt id, namn, webbplats och RSS-adress.
+Lägg till källan i `sources.json` och `FALLBACK_SOURCES` i `docs/app.js` med ett unikt id, namn, webbplats och RSS-adress. Lägg också till källan i `sources`-listan i `docs/feeds.json`.

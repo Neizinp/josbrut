@@ -332,7 +332,7 @@ function loadLocalLiveCache() {
     if (cached?.articles?.length) {
       const cleanedArticles = mergeArticleArchive(articles, cached.articles);
       const cleanedCache = { ...cached, articles: cleanedArticles };
-      applyFeedPayload(cleanedCache);
+      applyFeedPayload({ ...cleanedCache, sources });
       localStorage.setItem(LIVE_CACHE_KEY, JSON.stringify({ ...cleanedCache, articles }));
     }
   } catch {

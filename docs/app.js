@@ -22,7 +22,7 @@ let articles = [];
 let feedUpdatedAt = "";
 let lastUpdatedAt = null;
 const selectedSources = new Set(FALLBACK_SOURCES.map((source) => source.id));
-const MAX_ARTICLES_PER_SOURCE = 500;
+const MAX_ARTICLES_PER_SOURCE = 100;
 const INITIAL_VISIBLE_ARTICLES = 100;
 const ARTICLES_PER_PAGE = 100;
 let visibleArticleLimit = INITIAL_VISIBLE_ARTICLES;

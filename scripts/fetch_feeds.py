@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "sources.json"
 OUTPUT_FILE = ROOT / "site" / "feeds.json"
-MAX_ITEMS_PER_SOURCE = 500
+MAX_ITEMS_PER_SOURCE = 100
 MAX_DESCRIPTION_LENGTH = 280
 
 
